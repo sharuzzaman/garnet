@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733177819968,
+  "lastUpdate": 1733177824123,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -4700,6 +4700,52 @@ window.BENCHMARK_DATA = {
             "value": 2321.44408592811,
             "unit": "ns",
             "range": "± 10.916081471550402"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "ef9d9f099db0c3fac5632414f8d660d02a04a654",
+          "message": "Big update to where moved to a single config file and the ps1 file does not need to be updated when new BDNs are added.",
+          "timestamp": "2024-12-02T22:10:06Z",
+          "url": "https://github.com/microsoft/garnet/commit/ef9d9f099db0c3fac5632414f8d660d02a04a654"
+        },
+        "date": 1733177822375,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 120.60924309950609,
+            "unit": "ns",
+            "range": "± 0.25656385908824303"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 237.84311158316476,
+            "unit": "ns",
+            "range": "± 0.9073442620071172"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 389.2270088195801,
+            "unit": "ns",
+            "range": "± 1.4765179764553937"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2254.886042277018,
+            "unit": "ns",
+            "range": "± 12.807036918826013"
           }
         ]
       }
