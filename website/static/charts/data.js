@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733177731336,
+  "lastUpdate": 1733177737857,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -3126,6 +3126,46 @@ window.BENCHMARK_DATA = {
             "value": 31656.899139404297,
             "unit": "ns",
             "range": "± 149.29360124634698"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "ef9d9f099db0c3fac5632414f8d660d02a04a654",
+          "message": "Big update to where moved to a single config file and the ps1 file does not need to be updated when new BDNs are added.",
+          "timestamp": "2024-12-02T22:10:06Z",
+          "url": "https://github.com/microsoft/garnet/commit/ef9d9f099db0c3fac5632414f8d660d02a04a654"
+        },
+        "date": 1733177736570,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1814.7456235249838,
+            "unit": "ns",
+            "range": "± 19.204232511830554"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1714.7611428578696,
+            "unit": "ns",
+            "range": "± 13.642909102365378"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1745.3949462890625,
+            "unit": "ns",
+            "range": "± 15.289643711887333"
           }
         ]
       }
