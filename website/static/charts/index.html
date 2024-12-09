@@ -162,6 +162,7 @@
           };
 
           // Prepare data points for charts
+          delete data.entries.Benchmark;
           return Object.keys(data.entries).map(name => ({
             name,
             dataSet: collectBenchesPerTestCase(data.entries[name]),
