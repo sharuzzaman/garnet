@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733793555038,
+  "lastUpdate": 1733793557070,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5248,6 +5248,52 @@ window.BENCHMARK_DATA = {
             "value": 2962.879960123698,
             "unit": "ns",
             "range": "± 31.27147955516709"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "5571602ff9b22ee8e1f25920e454a35872d43fac",
+          "message": "Updated alert-threshold from 150% to 140%. If too many false positives we can raise it back. Also, removed darrenge from the alert CC line as no need for that.",
+          "timestamp": "2024-12-10T00:55:08Z",
+          "url": "https://github.com/microsoft/garnet/commit/5571602ff9b22ee8e1f25920e454a35872d43fac"
+        },
+        "date": 1733793556430,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 173.85917685582086,
+            "unit": "ns",
+            "range": "± 0.7646331284423733"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 310.62901183537076,
+            "unit": "ns",
+            "range": "± 1.272520129691248"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 609.2338386944363,
+            "unit": "ns",
+            "range": "± 3.854436740216441"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2958.1159339904784,
+            "unit": "ns",
+            "range": "± 21.86956423081258"
           }
         ]
       }
