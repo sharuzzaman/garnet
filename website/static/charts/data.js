@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733859814161,
+  "lastUpdate": 1733859835573,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7758,6 +7758,52 @@ window.BENCHMARK_DATA = {
             "value": 29698.32529703776,
             "unit": "ns",
             "range": "± 140.07301494938605"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "7799136d86db1387b78db5c215d5d7e891c1b08b",
+          "message": "Removed the commit comment / comparison to previous commit task. Still will get  summary data in the specific workflow run and still uploads data to charts (when pushing to main).",
+          "timestamp": "2024-12-10T19:38:01Z",
+          "url": "https://github.com/microsoft/garnet/commit/7799136d86db1387b78db5c215d5d7e891c1b08b"
+        },
+        "date": 1733859827022,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36001.22844989483,
+            "unit": "ns",
+            "range": "± 35.65729654290154"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 36959.30135091146,
+            "unit": "ns",
+            "range": "± 52.61940151655085"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31085.89148888221,
+            "unit": "ns",
+            "range": "± 43.7864967811212"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30627.11369441106,
+            "unit": "ns",
+            "range": "± 42.89558527767888"
           }
         ]
       }
