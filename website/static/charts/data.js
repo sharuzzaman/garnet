@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733792931090,
+  "lastUpdate": 1733792933419,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -4070,6 +4070,46 @@ window.BENCHMARK_DATA = {
             "value": 1745.3949462890625,
             "unit": "ns",
             "range": "± 15.289643711887333"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "5571602ff9b22ee8e1f25920e454a35872d43fac",
+          "message": "Updated alert-threshold from 150% to 140%. If too many false positives we can raise it back. Also, removed darrenge from the alert CC line as no need for that.",
+          "timestamp": "2024-12-10T00:55:08Z",
+          "url": "https://github.com/microsoft/garnet/commit/5571602ff9b22ee8e1f25920e454a35872d43fac"
+        },
+        "date": 1733792932721,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1715.9722073872883,
+            "unit": "ns",
+            "range": "± 15.13720372057506"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1718.6558350880941,
+            "unit": "ns",
+            "range": "± 13.717311438020708"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1738.4553405125937,
+            "unit": "ns",
+            "range": "± 10.283707713247415"
           }
         ]
       }
