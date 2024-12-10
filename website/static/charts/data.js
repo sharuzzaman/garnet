@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733859727937,
+  "lastUpdate": 1733859782311,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7066,6 +7066,52 @@ window.BENCHMARK_DATA = {
             "value": 2200.923127394456,
             "unit": "ns",
             "range": "± 5.1838444154555665"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "7799136d86db1387b78db5c215d5d7e891c1b08b",
+          "message": "Removed the commit comment / comparison to previous commit task. Still will get  summary data in the specific workflow run and still uploads data to charts (when pushing to main).",
+          "timestamp": "2024-12-10T19:38:01Z",
+          "url": "https://github.com/microsoft/garnet/commit/7799136d86db1387b78db5c215d5d7e891c1b08b"
+        },
+        "date": 1733859775083,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 119.4338830312093,
+            "unit": "ns",
+            "range": "± 0.4556891511601193"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 197.55637462322528,
+            "unit": "ns",
+            "range": "± 0.5483845258491654"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 349.53453699747723,
+            "unit": "ns",
+            "range": "± 1.3835894515031182"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2269.088581630162,
+            "unit": "ns",
+            "range": "± 7.541444290496105"
           }
         ]
       }
