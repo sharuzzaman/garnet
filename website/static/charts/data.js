@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733960750402,
+  "lastUpdate": 1733960845799,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -12562,6 +12562,102 @@ window.BENCHMARK_DATA = {
             "value": 120511.50599888393,
             "unit": "ns",
             "range": "± 696.4709856889897"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf1d4b66c442284f95c8db51e57274ba07316561",
+          "message": "Bump nanoid from 3.3.7 to 3.3.8 in /website (#873)\n\nBumps [nanoid](https://github.com/ai/nanoid) from 3.3.7 to 3.3.8.\r\n- [Release notes](https://github.com/ai/nanoid/releases)\r\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: nanoid\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: darrenge <darrenge@microsoft.com>",
+          "timestamp": "2024-12-11T15:37:40-08:00",
+          "tree_id": "1d3dbe6f308895a822d913fd3960c803796cb264",
+          "url": "https://github.com/microsoft/garnet/commit/cf1d4b66c442284f95c8db51e57274ba07316561"
+        },
+        "date": 1733960828851,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 116593.3475748698,
+            "unit": "ns",
+            "range": "± 516.3730861704294"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 104033.29608623798,
+            "unit": "ns",
+            "range": "± 161.87090300705088"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 98085.92529296875,
+            "unit": "ns",
+            "range": "± 84.9483517207441"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: ACL)",
+            "value": 126816.02783203125,
+            "unit": "ns",
+            "range": "± 472.19561063740264"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 131121.10072544642,
+            "unit": "ns",
+            "range": "± 475.4391220032019"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 110045.25472005208,
+            "unit": "ns",
+            "range": "± 346.41315573235096"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 108467.96264648438,
+            "unit": "ns",
+            "range": "± 284.1038503553621"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: AOF)",
+            "value": 130421.05364118304,
+            "unit": "ns",
+            "range": "± 691.7146000864416"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 116338.47249348958,
+            "unit": "ns",
+            "range": "± 231.99281303805853"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 110297.1748860677,
+            "unit": "ns",
+            "range": "± 209.20849533261824"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 94023.35205078125,
+            "unit": "ns",
+            "range": "± 116.13650667485328"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: None)",
+            "value": 130021.17838541667,
+            "unit": "ns",
+            "range": "± 313.55904348302136"
           }
         ]
       }
