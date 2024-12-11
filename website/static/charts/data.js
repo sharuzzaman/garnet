@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733955236322,
+  "lastUpdate": 1733960439950,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5934,6 +5934,54 @@ window.BENCHMARK_DATA = {
             "value": 31461.178971510668,
             "unit": "ns",
             "range": "± 75.95698351168714"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf1d4b66c442284f95c8db51e57274ba07316561",
+          "message": "Bump nanoid from 3.3.7 to 3.3.8 in /website (#873)\n\nBumps [nanoid](https://github.com/ai/nanoid) from 3.3.7 to 3.3.8.\r\n- [Release notes](https://github.com/ai/nanoid/releases)\r\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: nanoid\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: darrenge <darrenge@microsoft.com>",
+          "timestamp": "2024-12-11T15:37:40-08:00",
+          "tree_id": "1d3dbe6f308895a822d913fd3960c803796cb264",
+          "url": "https://github.com/microsoft/garnet/commit/cf1d4b66c442284f95c8db51e57274ba07316561"
+        },
+        "date": 1733960438371,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36474.445395914714,
+            "unit": "ns",
+            "range": "± 347.76374302997556"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 39297.550111897785,
+            "unit": "ns",
+            "range": "± 355.180125928561"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 32294.419372558594,
+            "unit": "ns",
+            "range": "± 114.7229783713484"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31790.14921061198,
+            "unit": "ns",
+            "range": "± 203.7091027191942"
           }
         ]
       }
