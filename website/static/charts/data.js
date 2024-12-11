@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733945566730,
+  "lastUpdate": 1733945576242,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5292,6 +5292,48 @@ window.BENCHMARK_DATA = {
             "value": 1740.622490056356,
             "unit": "ns",
             "range": "± 10.402430707935688"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dd766248719caf2817592e988a5e67edc22b511b",
+          "message": "Implementing BDN Perf pipeline (#758)\n\n* The CI scripts, YML and config files to check perf using BDN benchmarking.  Also, a fix in ClusterBench for and renamed Lua Runner benchmarking\r\n\r\n* Cleaned up the debug message and updated couple expected values\r\n\r\n* Updated SAddRem - windows - to 130 from 118.  Also removed unncesssary build statement in YML\r\n\r\n* Proof of concept for Performance run on ADO using BDN\r\n\r\n* Comment out number of Cores check so can try proof of concept on ADO perf machines\r\n\r\n* Getting close to having BDN working\r\n\r\n* Fixed RespLuaStress\r\n\r\n* Fixed issue in Lua Runner Stress\r\n\r\n* Updated config values, set charting and commit comment as separate tasks\r\n\r\n* Updated config values\r\n\r\n* Minor change to YML (remove pull requests) and updated LuaRunner config value\r\n\r\n* One more config value fix\r\n\r\n* Added a task to do the push\r\n\r\n* Putting back to push chart in the chart task and not a separate one\r\n\r\n* Moved the permissions to full workflow\r\n\r\n* Just minor to add commits\r\n\r\n* Adding actions: write permit since actions default to read only\r\n\r\n* Set up the commit comment for BDN as well as summary to show current vs previous BDN perf numbers\r\n\r\n* A few fixes\r\n\r\n* Updated BDN perf YML, config files and ps1 script\r\n\r\n* Versioning issue with BDN test files, fixed now\r\n\r\n* Bump threshold to 35% (135%) to trigger perf failure\r\n\r\n* Set to Linux only to reduce number of consectutive tests which caused push collisions with GitHub\r\n\r\n* Just Windows only test run\r\n\r\n* Putting it back to both OS for the tests\r\n\r\n* Set threshhold to 50% (150%) as seeing BDN ran twice on same code sometimes is in 40%+ range of difference.\r\n\r\n* Big change where using continuousbenchmark branch for all data for continuous benchmarking and also changed to where script is only checking allocated values and let github-action-benchmark compare mean values\r\n\r\n* Updated ClusterBench to get main changes\r\n\r\n* Fix issue with Cluster BDN is not able to access folder so setting to tmp which does have access\r\n\r\n* Bumping threshold to 50% (150%) as mean value in RespParseStress can vary into the 40% from run to run.\r\n\r\n* First update\r\n\r\n* Hiding the Gen0 column for Lua benchmark\r\n\r\n* Updated BDN test infrastructure to match the new BDN org.\r\n\r\n* Fix bug in ObjectOperations\r\n\r\n* Set max items on chart to 50 ... can modify later if want\r\n\r\n* Added the run on push to main\r\n\r\n* Put Performance Pipeline back\r\n\r\n* Fixed the default case when no parameters sent to ps1\r\n\r\n* Cleaned up config files:\r\nhave shorter names for values\r\nnot have configuration or framework (moved to ps1 file)\r\nnot have windows / linux differnce in expected\r\nMoved acceptable allocated range to script\r\n\r\nmodified the script:\r\nto only load values for the specific test instead of looking for all values\r\nchanges to match the changes in config (shorter names, etc)\r\n\r\n* Big update to where moved to a single config file and the ps1 file does not need to be updated when new BDNs are added.\r\n\r\n* Added workflow_dispatch: to deploy website yml so we can manually deploy website if we want\r\n\r\n* Updated alert-threshold from 150% to 140%. If too many false positives we can raise it back. Also, removed darrenge from the alert CC line as no need for that.\r\n\r\n* Removed the commit comment / comparison to previous commit task. Still will get  summary data in the specific workflow run and still uploads data to charts (when pushing to main).\r\n\r\n* Minor update - comments only",
+          "timestamp": "2024-12-11T11:29:32-08:00",
+          "tree_id": "a262ac843488b7afb61ad91dfb2a488917243391",
+          "url": "https://github.com/microsoft/garnet/commit/dd766248719caf2817592e988a5e67edc22b511b"
+        },
+        "date": 1733945574720,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1776.197327341352,
+            "unit": "ns",
+            "range": "± 14.43344240324183"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1714.2773532867432,
+            "unit": "ns",
+            "range": "± 16.626402009685627"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1755.2957613627116,
+            "unit": "ns",
+            "range": "± 15.523237812561376"
           }
         ]
       }
