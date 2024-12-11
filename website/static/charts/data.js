@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733960452360,
+  "lastUpdate": 1733960464800,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -6582,6 +6582,54 @@ window.BENCHMARK_DATA = {
             "value": 2876.2234130859374,
             "unit": "ns",
             "range": "± 16.80723300533179"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "name": "dependabot[bot]",
+            "username": "dependabot[bot]"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf1d4b66c442284f95c8db51e57274ba07316561",
+          "message": "Bump nanoid from 3.3.7 to 3.3.8 in /website (#873)\n\nBumps [nanoid](https://github.com/ai/nanoid) from 3.3.7 to 3.3.8.\r\n- [Release notes](https://github.com/ai/nanoid/releases)\r\n- [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md)\r\n- [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: nanoid\r\n  dependency-type: indirect\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>\r\nCo-authored-by: darrenge <darrenge@microsoft.com>",
+          "timestamp": "2024-12-11T15:37:40-08:00",
+          "tree_id": "1d3dbe6f308895a822d913fd3960c803796cb264",
+          "url": "https://github.com/microsoft/garnet/commit/cf1d4b66c442284f95c8db51e57274ba07316561"
+        },
+        "date": 1733960463202,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 178.07218401772636,
+            "unit": "ns",
+            "range": "± 0.9577073336526256"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 317.6942486445109,
+            "unit": "ns",
+            "range": "± 1.6751916805786122"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 611.2062438329061,
+            "unit": "ns",
+            "range": "± 8.263349683666844"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2909.5501708984375,
+            "unit": "ns",
+            "range": "± 20.280497203024307"
           }
         ]
       }
