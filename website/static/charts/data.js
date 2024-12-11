@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733941132898,
+  "lastUpdate": 1733941154540,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -8064,6 +8064,52 @@ window.BENCHMARK_DATA = {
             "value": 30627.11369441106,
             "unit": "ns",
             "range": "± 42.89558527767888"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "4016ec4f1f9e7ad289f85a6c79c3f43b183032da",
+          "message": "Merge branch 'main' into darrenge/BDNPerf",
+          "timestamp": "2024-12-11T18:12:42Z",
+          "url": "https://github.com/microsoft/garnet/commit/4016ec4f1f9e7ad289f85a6c79c3f43b183032da"
+        },
+        "date": 1733941136533,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36184.58993094308,
+            "unit": "ns",
+            "range": "± 34.59306356870254"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 36620.202200753345,
+            "unit": "ns",
+            "range": "± 41.81313609507291"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 30730.50580705915,
+            "unit": "ns",
+            "range": "± 32.95571174256856"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 29830.749257405598,
+            "unit": "ns",
+            "range": "± 38.331501187375665"
           }
         ]
       }
