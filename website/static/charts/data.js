@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734037736804,
+  "lastUpdate": 1734037775758,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -9928,6 +9928,54 @@ window.BENCHMARK_DATA = {
             "value": 29829.554094587053,
             "unit": "ns",
             "range": "± 73.64645719858115"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "96085550+vazois@users.noreply.github.com",
+            "name": "Vasileios Zois",
+            "username": "vazois"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d4c7448569063ea786802a0580acf465108e037",
+          "message": "Add ReadOnly Support for IDevice (#870)\n\n* add readOnly flag in streamProvider for LocalStorageDevice\r\n\r\n* add linux readOnly flag for managed device\r\n\r\n* add explicit readOnly assignment for parameter",
+          "timestamp": "2024-12-12T13:03:41-08:00",
+          "tree_id": "3d591691e9ac0cfb714d98096a0580abab554b23",
+          "url": "https://github.com/microsoft/garnet/commit/0d4c7448569063ea786802a0580acf465108e037"
+        },
+        "date": 1734037762836,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36939.19154575893,
+            "unit": "ns",
+            "range": "± 359.79236645503295"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 39209.50703938802,
+            "unit": "ns",
+            "range": "± 308.4202090554712"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 33406.21724446615,
+            "unit": "ns",
+            "range": "± 398.6167973776636"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 32963.14261300223,
+            "unit": "ns",
+            "range": "± 284.6650855830644"
           }
         ]
       }
