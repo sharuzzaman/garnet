@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733962827837,
+  "lastUpdate": 1733962843251,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -8478,6 +8478,52 @@ window.BENCHMARK_DATA = {
             "value": 2232.765680948893,
             "unit": "ns",
             "range": "± 5.105933284802233"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "7f08099d62f64d0816801230fd4ce6d3e7ef1e68",
+          "message": "Added two more BDN perf tests: Operations.CustomOperations and Operations.RawStringOperations",
+          "timestamp": "2024-12-12T00:14:52Z",
+          "url": "https://github.com/microsoft/garnet/commit/7f08099d62f64d0816801230fd4ce6d3e7ef1e68"
+        },
+        "date": 1733962834430,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 119.78591283162434,
+            "unit": "ns",
+            "range": "± 0.42349484130391746"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 212.17527559825353,
+            "unit": "ns",
+            "range": "± 0.7356626230460979"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 372.65464146931964,
+            "unit": "ns",
+            "range": "± 1.5862243777149772"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2269.253921508789,
+            "unit": "ns",
+            "range": "± 9.410687051342327"
           }
         ]
       }
