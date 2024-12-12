@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1733960845799,
+  "lastUpdate": 1733962700420,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -6024,6 +6024,52 @@ window.BENCHMARK_DATA = {
             "value": 31790.14921061198,
             "unit": "ns",
             "range": "± 203.7091027191942"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "7f08099d62f64d0816801230fd4ce6d3e7ef1e68",
+          "message": "Added two more BDN perf tests: Operations.CustomOperations and Operations.RawStringOperations",
+          "timestamp": "2024-12-12T00:14:52Z",
+          "url": "https://github.com/microsoft/garnet/commit/7f08099d62f64d0816801230fd4ce6d3e7ef1e68"
+        },
+        "date": 1733962698762,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 37581.3948852539,
+            "unit": "ns",
+            "range": "± 477.1159771018357"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 37953.23775431315,
+            "unit": "ns",
+            "range": "± 480.1595937410645"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31889.54465230306,
+            "unit": "ns",
+            "range": "± 48.57401908452144"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31295.548787434895,
+            "unit": "ns",
+            "range": "± 50.751963758842585"
           }
         ]
       }
