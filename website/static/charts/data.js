@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734037797523,
+  "lastUpdate": 1734037923699,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -12406,6 +12406,90 @@ window.BENCHMARK_DATA = {
             "value": 144125.17333984375,
             "unit": "ns",
             "range": "± 226.62800256346537"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "96085550+vazois@users.noreply.github.com",
+            "name": "Vasileios Zois",
+            "username": "vazois"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d4c7448569063ea786802a0580acf465108e037",
+          "message": "Add ReadOnly Support for IDevice (#870)\n\n* add readOnly flag in streamProvider for LocalStorageDevice\r\n\r\n* add linux readOnly flag for managed device\r\n\r\n* add explicit readOnly assignment for parameter",
+          "timestamp": "2024-12-12T13:03:41-08:00",
+          "tree_id": "3d591691e9ac0cfb714d98096a0580abab554b23",
+          "url": "https://github.com/microsoft/garnet/commit/0d4c7448569063ea786802a0580acf465108e037"
+        },
+        "date": 1734037913048,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 16216.236441476005,
+            "unit": "ns",
+            "range": "± 13.495682909872151"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 14679.898071289062,
+            "unit": "ns",
+            "range": "± 14.31487746855269"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14527.525438581195,
+            "unit": "ns",
+            "range": "± 37.515001578987544"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 13099.007415771484,
+            "unit": "ns",
+            "range": "± 12.41961904526673"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 126903.60270182292,
+            "unit": "ns",
+            "range": "± 235.2064453828613"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 21334.392874581474,
+            "unit": "ns",
+            "range": "± 62.486819310887384"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 18326.69499715169,
+            "unit": "ns",
+            "range": "± 18.34074258509876"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 15275.374094645182,
+            "unit": "ns",
+            "range": "± 15.154475865593417"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 14333.641706194196,
+            "unit": "ns",
+            "range": "± 20.95077379690548"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 133713.91078404017,
+            "unit": "ns",
+            "range": "± 170.07474387261868"
           }
         ]
       }
