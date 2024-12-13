@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734127997959,
+  "lastUpdate": 1734128009303,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -13168,6 +13168,54 @@ window.BENCHMARK_DATA = {
             "value": 30232.608032226562,
             "unit": "ns",
             "range": "± 21.75489049541768"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "babykart@gmail.com",
+            "name": "babykart",
+            "username": "babykart"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1ce0dafecaba15335e8e0767a6eeb441b72e56c",
+          "message": "[helm-chart] Add helm-docs to the helm chart workflow (#862)\n\n* Add helm-docs to the helm chart workflow\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Standardize the variables\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Add Helm chart artifacts build directory\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Create a PR to update charts/garnet/README.md\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\nCo-authored-by: Badrish Chandramouli <badrishc@microsoft.com>",
+          "timestamp": "2024-12-13T14:08:03-08:00",
+          "tree_id": "b2aa23d9235558527754332fab728fa03d60007b",
+          "url": "https://github.com/microsoft/garnet/commit/f1ce0dafecaba15335e8e0767a6eeb441b72e56c"
+        },
+        "date": 1734128000024,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 35196.244303385414,
+            "unit": "ns",
+            "range": "± 37.664136499031045"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 35741.835239955355,
+            "unit": "ns",
+            "range": "± 88.099518493931"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 30949.528401692707,
+            "unit": "ns",
+            "range": "± 29.424194018469024"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30814.778355189734,
+            "unit": "ns",
+            "range": "± 28.162306963012945"
           }
         ]
       }
