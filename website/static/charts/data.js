@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734058729567,
+  "lastUpdate": 1734074829778,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -6376,6 +6376,54 @@ window.BENCHMARK_DATA = {
             "value": 30588.82626778739,
             "unit": "ns",
             "range": "± 74.04231713345257"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kmontrose@microsoft.com",
+            "name": "kevin-montrose",
+            "username": "kevin-montrose"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa004d372a23731e3e5f0fa65d701c4a4d62b381",
+          "message": "Fixes for SCRIPT commands and behavior (#860)\n\n* fix FastBasicRespCommandsInfo construction and lookup; which incidentally fixes EVALSHA when scripting is enabled\r\n\r\n* fix MultiKeySlotVerify - keys past the second were not correctly visited\r\n\r\n* break SCRIPT into appropriate subcommands; update command info; fix SCRIPT EXISTS to match Redis behavior; tests for SCRIPT|* ACLs; DRY up SCRIPT command implementations\r\n\r\n* test script failures, match Redis error messages\r\n\r\n* remove byte[] allocations from evalsha path (amongst others); should get the Lua overhead down to just the NLua + locking stuff\r\n\r\n* add test for multi-hash version of SCRIPT|EXIST; fix bug where hash casing matters (matching Redis by defaulting to upper case hashes values); remove debug code\r\n\r\n* fix formatting\r\n\r\n* uppercase some test cases I missed\r\n\r\n* add EVALSHA to cluster slot tests\r\n\r\n* restore lower case hashes; erroneously thought Redis used upper case\r\n\r\n* add ScriptOperations to benchmark this change\r\n\r\n* formatting fixes\r\n\r\n---------\r\n\r\nCo-authored-by: Badrish Chandramouli <badrishc@microsoft.com>",
+          "timestamp": "2024-12-12T23:23:53-08:00",
+          "tree_id": "8c0664ade6b6572a8af295961a2d61a846b60756",
+          "url": "https://github.com/microsoft/garnet/commit/aa004d372a23731e3e5f0fa65d701c4a4d62b381"
+        },
+        "date": 1734074828060,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36503.27585652669,
+            "unit": "ns",
+            "range": "± 273.5314318572555"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 38238.90620320638,
+            "unit": "ns",
+            "range": "± 361.4930166069858"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31949.303966815656,
+            "unit": "ns",
+            "range": "± 120.53878533781115"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31615.33027766301,
+            "unit": "ns",
+            "range": "± 30.4203067847868"
           }
         ]
       }
