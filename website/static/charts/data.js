@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734127425822,
+  "lastUpdate": 1734127432364,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -16636,6 +16636,90 @@ window.BENCHMARK_DATA = {
             "value": 141681.29507211538,
             "unit": "ns",
             "range": "± 211.27308696936765"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "178dc21b572263c4421e2602e41cc243cb94f507",
+          "message": "Fix writing output for scan (#880)\n\n* Writing output for scan was not handling output buffer (dcurr, dend) correctly. Also, it was not handling large keys correctly.\r\n\r\n* update version",
+          "timestamp": "2024-12-13T13:55:49-08:00",
+          "tree_id": "1966c990a96fa84a42747ad14ce5480535196e57",
+          "url": "https://github.com/microsoft/garnet/commit/178dc21b572263c4421e2602e41cc243cb94f507"
+        },
+        "date": 1734127415864,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 15977.44639078776,
+            "unit": "ns",
+            "range": "± 60.1153536915268"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 14781.795610700336,
+            "unit": "ns",
+            "range": "± 30.228727136013546"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14439.727223714193,
+            "unit": "ns",
+            "range": "± 24.579701047452623"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 13257.324570875902,
+            "unit": "ns",
+            "range": "± 8.187638083124753"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 131847.4698893229,
+            "unit": "ns",
+            "range": "± 141.42884489177965"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 19114.29225376674,
+            "unit": "ns",
+            "range": "± 28.8094760450955"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 19725.345938546317,
+            "unit": "ns",
+            "range": "± 32.471258724772994"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 15595.553001990686,
+            "unit": "ns",
+            "range": "± 12.833790790607907"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 14762.87981669108,
+            "unit": "ns",
+            "range": "± 13.454513871435546"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 139347.96840122767,
+            "unit": "ns",
+            "range": "± 244.27203465150413"
           }
         ]
       }
