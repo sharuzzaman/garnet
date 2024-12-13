@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734114619234,
+  "lastUpdate": 1734114654854,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -8936,6 +8936,90 @@ window.BENCHMARK_DATA = {
             "value": 129383.9963030134,
             "unit": "ns",
             "range": "± 1498.8845427958076"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca0222960f0145302eb1fc9896f680f9aff5a4d1",
+          "message": "Streaming snapshot checkpoint in Tsavorite (#824)\n\n* Mild refactor in preparation\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* fix tests to not cover steaming snapshot as it is not a traditional checkpoint\r\n\r\n* add unit test\r\n\r\n* fix tests\r\n\r\n* fix test\r\n\r\n* updates\r\n\r\n* Support maxAddress during liveness checks\r\n\r\n* improvements to api\r\n\r\n* Add SetVersion API\r\n\r\n* more checks\r\n\r\n* add comment\r\n\r\n* add comments",
+          "timestamp": "2024-12-13T10:25:49-08:00",
+          "tree_id": "917be4f308af8da9ec7782faa5069a09f2b873c5",
+          "url": "https://github.com/microsoft/garnet/commit/ca0222960f0145302eb1fc9896f680f9aff5a4d1"
+        },
+        "date": 1734114653366,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 16769.494192270133,
+            "unit": "ns",
+            "range": "± 62.744702631847126"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 15988.764310709636,
+            "unit": "ns",
+            "range": "± 188.43321746216319"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14808.08096430852,
+            "unit": "ns",
+            "range": "± 21.483312530201875"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 13831.978903198242,
+            "unit": "ns",
+            "range": "± 77.52777236083321"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 119696.9816800631,
+            "unit": "ns",
+            "range": "± 763.8878430558335"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 20705.959853108725,
+            "unit": "ns",
+            "range": "± 136.3618951251602"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 20968.045494666465,
+            "unit": "ns",
+            "range": "± 27.84878861527714"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 16189.846918741861,
+            "unit": "ns",
+            "range": "± 113.50961507396359"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 15899.188659667969,
+            "unit": "ns",
+            "range": "± 54.952434700723636"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 128040.72814941406,
+            "unit": "ns",
+            "range": "± 323.3352013302896"
           }
         ]
       }
