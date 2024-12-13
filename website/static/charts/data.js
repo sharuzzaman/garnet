@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734114808896,
+  "lastUpdate": 1734114939919,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -16338,6 +16338,102 @@ window.BENCHMARK_DATA = {
             "value": 123997.06186147836,
             "unit": "ns",
             "range": "± 719.1933766640254"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca0222960f0145302eb1fc9896f680f9aff5a4d1",
+          "message": "Streaming snapshot checkpoint in Tsavorite (#824)\n\n* Mild refactor in preparation\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* fix tests to not cover steaming snapshot as it is not a traditional checkpoint\r\n\r\n* add unit test\r\n\r\n* fix tests\r\n\r\n* fix test\r\n\r\n* updates\r\n\r\n* Support maxAddress during liveness checks\r\n\r\n* improvements to api\r\n\r\n* Add SetVersion API\r\n\r\n* more checks\r\n\r\n* add comment\r\n\r\n* add comments",
+          "timestamp": "2024-12-13T10:25:49-08:00",
+          "tree_id": "917be4f308af8da9ec7782faa5069a09f2b873c5",
+          "url": "https://github.com/microsoft/garnet/commit/ca0222960f0145302eb1fc9896f680f9aff5a4d1"
+        },
+        "date": 1734114928649,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 117135.84798177083,
+            "unit": "ns",
+            "range": "± 187.1430737430288"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 102171.64132254464,
+            "unit": "ns",
+            "range": "± 342.4008841905227"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 95367.40397135417,
+            "unit": "ns",
+            "range": "± 350.4140577051225"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: ACL)",
+            "value": 135771.83919270834,
+            "unit": "ns",
+            "range": "± 594.9988108243732"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 130480.45817057292,
+            "unit": "ns",
+            "range": "± 405.8453523718878"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 117489.93791852679,
+            "unit": "ns",
+            "range": "± 1452.651261908386"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 110460.13509114583,
+            "unit": "ns",
+            "range": "± 1596.394497504247"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: AOF)",
+            "value": 130453.11686197917,
+            "unit": "ns",
+            "range": "± 977.9933246960668"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 117863.3562360491,
+            "unit": "ns",
+            "range": "± 202.7785370346965"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 104769.48590959821,
+            "unit": "ns",
+            "range": "± 192.3096648700648"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 95717.91120256696,
+            "unit": "ns",
+            "range": "± 108.29702596150958"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: None)",
+            "value": 122163.60595703125,
+            "unit": "ns",
+            "range": "± 703.501128105373"
           }
         ]
       }
