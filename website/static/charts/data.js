@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734118686977,
+  "lastUpdate": 1734118715457,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7532,6 +7532,52 @@ window.BENCHMARK_DATA = {
             "value": 2887.178291593279,
             "unit": "ns",
             "range": "± 28.770134276187093"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "05f6b71f1b27b7f1fe89141f5ef55043e97aacb7",
+          "message": "Added ScriptOperations and conrresponding expected values in Config file",
+          "timestamp": "2024-12-13T19:32:59Z",
+          "url": "https://github.com/microsoft/garnet/commit/05f6b71f1b27b7f1fe89141f5ef55043e97aacb7"
+        },
+        "date": 1734118713356,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 184.43752009528023,
+            "unit": "ns",
+            "range": "± 2.4488099104405046"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 320.06929271561756,
+            "unit": "ns",
+            "range": "± 3.02580094955078"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 611.9868154525757,
+            "unit": "ns",
+            "range": "± 5.60583521327886"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2930.079768880208,
+            "unit": "ns",
+            "range": "± 18.979368521206915"
           }
         ]
       }
