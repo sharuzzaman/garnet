@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734058341150,
+  "lastUpdate": 1734058357918,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5540,6 +5540,48 @@ window.BENCHMARK_DATA = {
             "value": 1703.4241178830464,
             "unit": "ns",
             "range": "± 3.1064559980055213"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "talzacc@microsoft.com",
+            "name": "Tal Zaccai",
+            "username": "TalZaccai"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f2c2261c72948136f6af9dfdfefc86ebb02c686a",
+          "message": "CustomCommandManager + CustomCommandManagerSession to use auto-expandable maps (#848)\n\n* wip\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* wip\r\n\r\n* wip\r\n\r\n* Comments + tests\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* fix\r\n\r\n* format\r\n\r\n* Adding a non-concurrent ExpandableMap\r\n\r\n* small fix\r\n\r\n* Switching to SingleWriterMultiReaderLock\r\n\r\n* Some thread-safety related fixes\r\n\r\n* Added some async tests for command registration\r\n\r\n* small bugfixes\r\n\r\n* format",
+          "timestamp": "2024-12-12T18:49:23-08:00",
+          "tree_id": "27ea42b0a4d6b834a7f450d12100d29e8b94f077",
+          "url": "https://github.com/microsoft/garnet/commit/f2c2261c72948136f6af9dfdfefc86ebb02c686a"
+        },
+        "date": 1734058355908,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1722.3625702176776,
+            "unit": "ns",
+            "range": "± 8.88205106032686"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1739.5425454457602,
+            "unit": "ns",
+            "range": "± 17.637734771677525"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1733.1600671132405,
+            "unit": "ns",
+            "range": "± 11.703610735434529"
           }
         ]
       }
