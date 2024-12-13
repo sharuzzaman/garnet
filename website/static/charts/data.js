@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734134059008,
+  "lastUpdate": 1734134063036,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -21168,6 +21168,84 @@ window.BENCHMARK_DATA = {
             "value": 98680.09905133929,
             "unit": "ns",
             "range": "± 205.10962159461997"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "635cd58ab0fe9423a13f1a0c38b715e61dafde22",
+          "message": "Revert \"[helm-chart] Add helm-docs to the helm chart workflow (#862)\" (#881)\n\nThis reverts commit f1ce0dafecaba15335e8e0767a6eeb441b72e56c.",
+          "timestamp": "2024-12-13T15:46:32-08:00",
+          "tree_id": "013e7e35462603ca9b981e1384552f47be440c50",
+          "url": "https://github.com/microsoft/garnet/commit/635cd58ab0fe9423a13f1a0c38b715e61dafde22"
+        },
+        "date": 1734134053726,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 114463.0594889323,
+            "unit": "ns",
+            "range": "± 191.8600474852767"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 98621.8135579427,
+            "unit": "ns",
+            "range": "± 226.88147621126745"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 101412.52632141113,
+            "unit": "ns",
+            "range": "± 1758.5818662879167"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 129331.33382161458,
+            "unit": "ns",
+            "range": "± 919.1197258199484"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 120020.4150390625,
+            "unit": "ns",
+            "range": "± 1170.6279527104539"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 124061.46728515625,
+            "unit": "ns",
+            "range": "± 383.9969529502185"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 117775.8535531851,
+            "unit": "ns",
+            "range": "± 206.91973810773197"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 103430.6894155649,
+            "unit": "ns",
+            "range": "± 195.9502351956504"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 98355.10602678571,
+            "unit": "ns",
+            "range": "± 395.3336358162344"
           }
         ]
       }
