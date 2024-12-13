@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734127148926,
+  "lastUpdate": 1734127158562,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7938,6 +7938,54 @@ window.BENCHMARK_DATA = {
             "value": 2909.445321146647,
             "unit": "ns",
             "range": "± 14.825702930725434"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "178dc21b572263c4421e2602e41cc243cb94f507",
+          "message": "Fix writing output for scan (#880)\n\n* Writing output for scan was not handling output buffer (dcurr, dend) correctly. Also, it was not handling large keys correctly.\r\n\r\n* update version",
+          "timestamp": "2024-12-13T13:55:49-08:00",
+          "tree_id": "1966c990a96fa84a42747ad14ce5480535196e57",
+          "url": "https://github.com/microsoft/garnet/commit/178dc21b572263c4421e2602e41cc243cb94f507"
+        },
+        "date": 1734127156990,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 183.85704694475447,
+            "unit": "ns",
+            "range": "± 1.2783397039498137"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 349.8680354631864,
+            "unit": "ns",
+            "range": "± 1.2490840737699522"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 632.9414082254682,
+            "unit": "ns",
+            "range": "± 4.159123554974964"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2927.6136395772296,
+            "unit": "ns",
+            "range": "± 20.33788624526231"
           }
         ]
       }
