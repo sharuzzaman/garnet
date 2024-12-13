@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734122351255,
+  "lastUpdate": 1734122375644,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -10338,6 +10338,52 @@ window.BENCHMARK_DATA = {
             "value": 2258.6374010358536,
             "unit": "ns",
             "range": "± 5.070132992971308"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "6432e96122dea72a402378ff0bfbec0edbadf8c4",
+          "message": "Merge branch 'main' into darrenge/AddNewBDN",
+          "timestamp": "2024-12-13T20:29:35Z",
+          "url": "https://github.com/microsoft/garnet/commit/6432e96122dea72a402378ff0bfbec0edbadf8c4"
+        },
+        "date": 1734122365540,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 120.3033971786499,
+            "unit": "ns",
+            "range": "± 0.24447436321275828"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 211.35011059897286,
+            "unit": "ns",
+            "range": "± 0.8300611100076684"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 412.5082118170602,
+            "unit": "ns",
+            "range": "± 2.871255227145144"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2300.866780962263,
+            "unit": "ns",
+            "range": "± 18.611032765997155"
           }
         ]
       }
