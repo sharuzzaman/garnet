@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734133789539,
+  "lastUpdate": 1734133802763,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -8484,6 +8484,54 @@ window.BENCHMARK_DATA = {
             "value": 2935.7509251912434,
             "unit": "ns",
             "range": "± 20.065735061964357"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "635cd58ab0fe9423a13f1a0c38b715e61dafde22",
+          "message": "Revert \"[helm-chart] Add helm-docs to the helm chart workflow (#862)\" (#881)\n\nThis reverts commit f1ce0dafecaba15335e8e0767a6eeb441b72e56c.",
+          "timestamp": "2024-12-13T15:46:32-08:00",
+          "tree_id": "013e7e35462603ca9b981e1384552f47be440c50",
+          "url": "https://github.com/microsoft/garnet/commit/635cd58ab0fe9423a13f1a0c38b715e61dafde22"
+        },
+        "date": 1734133800402,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 186.86895966529846,
+            "unit": "ns",
+            "range": "± 1.2007424210328141"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 319.99647317613875,
+            "unit": "ns",
+            "range": "± 2.651121056139691"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 601.7862464269002,
+            "unit": "ns",
+            "range": "± 4.868715443178402"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2988.8161781311037,
+            "unit": "ns",
+            "range": "± 31.704949972279085"
           }
         ]
       }
