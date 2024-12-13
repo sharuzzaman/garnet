@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734058391013,
+  "lastUpdate": 1734058439930,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -9192,6 +9192,54 @@ window.BENCHMARK_DATA = {
             "value": 2270.0525556291855,
             "unit": "ns",
             "range": "± 11.509109268563236"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "talzacc@microsoft.com",
+            "name": "Tal Zaccai",
+            "username": "TalZaccai"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f2c2261c72948136f6af9dfdfefc86ebb02c686a",
+          "message": "CustomCommandManager + CustomCommandManagerSession to use auto-expandable maps (#848)\n\n* wip\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* wip\r\n\r\n* wip\r\n\r\n* Comments + tests\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* fix\r\n\r\n* format\r\n\r\n* Adding a non-concurrent ExpandableMap\r\n\r\n* small fix\r\n\r\n* Switching to SingleWriterMultiReaderLock\r\n\r\n* Some thread-safety related fixes\r\n\r\n* Added some async tests for command registration\r\n\r\n* small bugfixes\r\n\r\n* format",
+          "timestamp": "2024-12-12T18:49:23-08:00",
+          "tree_id": "27ea42b0a4d6b834a7f450d12100d29e8b94f077",
+          "url": "https://github.com/microsoft/garnet/commit/f2c2261c72948136f6af9dfdfefc86ebb02c686a"
+        },
+        "date": 1734058427158,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 119.74014895302909,
+            "unit": "ns",
+            "range": "± 0.45041522118550353"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 197.5832462310791,
+            "unit": "ns",
+            "range": "± 1.0200458228299951"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 380.48488934834796,
+            "unit": "ns",
+            "range": "± 1.506920265920848"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2260.3265322171724,
+            "unit": "ns",
+            "range": "± 3.6334205329863405"
           }
         ]
       }
