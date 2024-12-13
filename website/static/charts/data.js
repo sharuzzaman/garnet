@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734132117277,
+  "lastUpdate": 1734132133786,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -8346,6 +8346,54 @@ window.BENCHMARK_DATA = {
             "value": 2992.9672475179036,
             "unit": "ns",
             "range": "± 26.93522005864111"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d3e8d6ee656f9c091cbd6c37a7d30db9c45f8b3",
+          "message": "Add BDN tests:  Operations.RawStringOperations and Operations.CustomOperations (#876)\n\n* Added two more BDN perf tests: Operations.CustomOperations and Operations.RawStringOperations\r\n\r\n* Added BDN Charts to the badges\r\n\r\n* Added link to BDN charts to website\r\n\r\n* Setting results array to 70 so we have plenty of space for different results (in a single BDN result set).\r\n\r\n* Added ScriptOperations and conrresponding expected values in Config file\r\n\r\n---------\r\n\r\nCo-authored-by: Badrish Chandramouli <badrishc@microsoft.com>",
+          "timestamp": "2024-12-13T15:18:56-08:00",
+          "tree_id": "57912268bf5280aad0e440f06d42d6f0248c6523",
+          "url": "https://github.com/microsoft/garnet/commit/3d3e8d6ee656f9c091cbd6c37a7d30db9c45f8b3"
+        },
+        "date": 1734132132143,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 192.86800336837769,
+            "unit": "ns",
+            "range": "± 3.002063806150634"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 319.0803663889567,
+            "unit": "ns",
+            "range": "± 2.342252063255537"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 586.3028335571289,
+            "unit": "ns",
+            "range": "± 3.0614311566474357"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2935.7509251912434,
+            "unit": "ns",
+            "range": "± 20.065735061964357"
           }
         ]
       }
