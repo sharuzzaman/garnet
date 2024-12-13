@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734118715457,
+  "lastUpdate": 1734118801239,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -11576,6 +11576,52 @@ window.BENCHMARK_DATA = {
             "value": 29802.06059047154,
             "unit": "ns",
             "range": "± 96.77267191690427"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "05f6b71f1b27b7f1fe89141f5ef55043e97aacb7",
+          "message": "Added ScriptOperations and conrresponding expected values in Config file",
+          "timestamp": "2024-12-13T19:32:59Z",
+          "url": "https://github.com/microsoft/garnet/commit/05f6b71f1b27b7f1fe89141f5ef55043e97aacb7"
+        },
+        "date": 1734118792459,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 35876.30615234375,
+            "unit": "ns",
+            "range": "± 48.13598560541247"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 35996.7323811849,
+            "unit": "ns",
+            "range": "± 65.07379216936232"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 30922.225516183036,
+            "unit": "ns",
+            "range": "± 36.6325814027778"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30209.458719889324,
+            "unit": "ns",
+            "range": "± 153.9114648835324"
           }
         ]
       }
