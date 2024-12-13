@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734114656005,
+  "lastUpdate": 1734114659199,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -10558,6 +10558,48 @@ window.BENCHMARK_DATA = {
             "value": 1795.9675516401019,
             "unit": "ns",
             "range": "± 2.4026949652645184"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca0222960f0145302eb1fc9896f680f9aff5a4d1",
+          "message": "Streaming snapshot checkpoint in Tsavorite (#824)\n\n* Mild refactor in preparation\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* updates\r\n\r\n* fix tests to not cover steaming snapshot as it is not a traditional checkpoint\r\n\r\n* add unit test\r\n\r\n* fix tests\r\n\r\n* fix test\r\n\r\n* updates\r\n\r\n* Support maxAddress during liveness checks\r\n\r\n* improvements to api\r\n\r\n* Add SetVersion API\r\n\r\n* more checks\r\n\r\n* add comment\r\n\r\n* add comments",
+          "timestamp": "2024-12-13T10:25:49-08:00",
+          "tree_id": "917be4f308af8da9ec7782faa5069a09f2b873c5",
+          "url": "https://github.com/microsoft/garnet/commit/ca0222960f0145302eb1fc9896f680f9aff5a4d1"
+        },
+        "date": 1734114648442,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1828.630324772426,
+            "unit": "ns",
+            "range": "± 1.0481144197143868"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1801.5761920383998,
+            "unit": "ns",
+            "range": "± 3.55577327646557"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1798.025945516733,
+            "unit": "ns",
+            "range": "± 0.8614618073550709"
           }
         ]
       }
