@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734123194112,
+  "lastUpdate": 1734123200527,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -5746,6 +5746,48 @@ window.BENCHMARK_DATA = {
             "value": 1711.1204866262583,
             "unit": "ns",
             "range": "± 16.37471821852659"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3f679b0b683e4e94fa2a3ebb2689708ec2efee74",
+          "message": "Added BDN for all hash commands (#879)\n\n* Added BDN for all hash commands\r\n\r\n* Moved BDN of hash set to separate class",
+          "timestamp": "2024-12-13T12:50:11-08:00",
+          "tree_id": "66c04dc8b338f40aeb360419fc1953dcc219abbc",
+          "url": "https://github.com/microsoft/garnet/commit/3f679b0b683e4e94fa2a3ebb2689708ec2efee74"
+        },
+        "date": 1734123198788,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1745.9569937388103,
+            "unit": "ns",
+            "range": "± 10.256001891939702"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1716.6228154500325,
+            "unit": "ns",
+            "range": "± 12.372612954194782"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1718.2450532277426,
+            "unit": "ns",
+            "range": "± 14.990384295583732"
           }
         ]
       }
