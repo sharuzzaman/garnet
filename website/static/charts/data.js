@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734127295761,
+  "lastUpdate": 1734127425822,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -18704,6 +18704,84 @@ window.BENCHMARK_DATA = {
             "value": 95597.30122884114,
             "unit": "ns",
             "range": "± 133.960310466468"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "178dc21b572263c4421e2602e41cc243cb94f507",
+          "message": "Fix writing output for scan (#880)\n\n* Writing output for scan was not handling output buffer (dcurr, dend) correctly. Also, it was not handling large keys correctly.\r\n\r\n* update version",
+          "timestamp": "2024-12-13T13:55:49-08:00",
+          "tree_id": "1966c990a96fa84a42747ad14ce5480535196e57",
+          "url": "https://github.com/microsoft/garnet/commit/178dc21b572263c4421e2602e41cc243cb94f507"
+        },
+        "date": 1734127412919,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 115642.42318960336,
+            "unit": "ns",
+            "range": "± 102.75278245436874"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 102466.34192833534,
+            "unit": "ns",
+            "range": "± 202.8306439194994"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 100561.8913922991,
+            "unit": "ns",
+            "range": "± 160.0906994319792"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 139020.92529296875,
+            "unit": "ns",
+            "range": "± 330.93826372590314"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 118789.26676432292,
+            "unit": "ns",
+            "range": "± 1367.0680026826262"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 115630.224609375,
+            "unit": "ns",
+            "range": "± 419.3880405867164"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 116112.93247767857,
+            "unit": "ns",
+            "range": "± 325.70703374699957"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 102194.97855050223,
+            "unit": "ns",
+            "range": "± 271.1996214923902"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 97478.23399135044,
+            "unit": "ns",
+            "range": "± 225.35990111434828"
           }
         ]
       }
