@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734131398629,
+  "lastUpdate": 1734132105398,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7084,6 +7084,54 @@ window.BENCHMARK_DATA = {
             "value": 31291.731412760415,
             "unit": "ns",
             "range": "± 251.45857100807368"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3d3e8d6ee656f9c091cbd6c37a7d30db9c45f8b3",
+          "message": "Add BDN tests:  Operations.RawStringOperations and Operations.CustomOperations (#876)\n\n* Added two more BDN perf tests: Operations.CustomOperations and Operations.RawStringOperations\r\n\r\n* Added BDN Charts to the badges\r\n\r\n* Added link to BDN charts to website\r\n\r\n* Setting results array to 70 so we have plenty of space for different results (in a single BDN result set).\r\n\r\n* Added ScriptOperations and conrresponding expected values in Config file\r\n\r\n---------\r\n\r\nCo-authored-by: Badrish Chandramouli <badrishc@microsoft.com>",
+          "timestamp": "2024-12-13T15:18:56-08:00",
+          "tree_id": "57912268bf5280aad0e440f06d42d6f0248c6523",
+          "url": "https://github.com/microsoft/garnet/commit/3d3e8d6ee656f9c091cbd6c37a7d30db9c45f8b3"
+        },
+        "date": 1734132103727,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 37338.74373953683,
+            "unit": "ns",
+            "range": "± 293.04381386143524"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 37663.53348388672,
+            "unit": "ns",
+            "range": "± 39.57944776276908"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31983.63195292155,
+            "unit": "ns",
+            "range": "± 112.50602428573582"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31194.646596272785,
+            "unit": "ns",
+            "range": "± 370.26242408813533"
           }
         ]
       }
