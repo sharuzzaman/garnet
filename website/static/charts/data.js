@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734058483527,
+  "lastUpdate": 1734058531662,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -12050,6 +12050,102 @@ window.BENCHMARK_DATA = {
             "value": 162204.48507254463,
             "unit": "ns",
             "range": "± 1417.0306236410656"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "talzacc@microsoft.com",
+            "name": "Tal Zaccai",
+            "username": "TalZaccai"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f2c2261c72948136f6af9dfdfefc86ebb02c686a",
+          "message": "CustomCommandManager + CustomCommandManagerSession to use auto-expandable maps (#848)\n\n* wip\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* wip\r\n\r\n* wip\r\n\r\n* Comments + tests\r\n\r\n* wip\r\n\r\n* fixes\r\n\r\n* fix\r\n\r\n* format\r\n\r\n* Adding a non-concurrent ExpandableMap\r\n\r\n* small fix\r\n\r\n* Switching to SingleWriterMultiReaderLock\r\n\r\n* Some thread-safety related fixes\r\n\r\n* Added some async tests for command registration\r\n\r\n* small bugfixes\r\n\r\n* format",
+          "timestamp": "2024-12-12T18:49:23-08:00",
+          "tree_id": "27ea42b0a4d6b834a7f450d12100d29e8b94f077",
+          "url": "https://github.com/microsoft/garnet/commit/f2c2261c72948136f6af9dfdfefc86ebb02c686a"
+        },
+        "date": 1734058530214,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 147067.677734375,
+            "unit": "ns",
+            "range": "± 472.2896675726806"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 129246.42373422477,
+            "unit": "ns",
+            "range": "± 224.92611041064657"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 131393.38916015625,
+            "unit": "ns",
+            "range": "± 848.3700200800151"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: ACL)",
+            "value": 158191.18684895834,
+            "unit": "ns",
+            "range": "± 1568.1100311511868"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 165057.67190987724,
+            "unit": "ns",
+            "range": "± 490.1653366401623"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 149379.690234375,
+            "unit": "ns",
+            "range": "± 859.3018045604219"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 146170.82404436384,
+            "unit": "ns",
+            "range": "± 1007.5720992857634"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: AOF)",
+            "value": 173845.9683268229,
+            "unit": "ns",
+            "range": "± 2924.3494104390998"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 147606.0072893415,
+            "unit": "ns",
+            "range": "± 379.1247039366477"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 129868.9307454427,
+            "unit": "ns",
+            "range": "± 829.0132707099801"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 132180.29985700335,
+            "unit": "ns",
+            "range": "± 732.4948394897012"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: None)",
+            "value": 154374.48948567707,
+            "unit": "ns",
+            "range": "± 1296.51661701581"
           }
         ]
       }
