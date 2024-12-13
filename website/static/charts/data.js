@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734074988811,
+  "lastUpdate": 1734075012429,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -12506,6 +12506,102 @@ window.BENCHMARK_DATA = {
             "value": 154374.48948567707,
             "unit": "ns",
             "range": "± 1296.51661701581"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kmontrose@microsoft.com",
+            "name": "kevin-montrose",
+            "username": "kevin-montrose"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa004d372a23731e3e5f0fa65d701c4a4d62b381",
+          "message": "Fixes for SCRIPT commands and behavior (#860)\n\n* fix FastBasicRespCommandsInfo construction and lookup; which incidentally fixes EVALSHA when scripting is enabled\r\n\r\n* fix MultiKeySlotVerify - keys past the second were not correctly visited\r\n\r\n* break SCRIPT into appropriate subcommands; update command info; fix SCRIPT EXISTS to match Redis behavior; tests for SCRIPT|* ACLs; DRY up SCRIPT command implementations\r\n\r\n* test script failures, match Redis error messages\r\n\r\n* remove byte[] allocations from evalsha path (amongst others); should get the Lua overhead down to just the NLua + locking stuff\r\n\r\n* add test for multi-hash version of SCRIPT|EXIST; fix bug where hash casing matters (matching Redis by defaulting to upper case hashes values); remove debug code\r\n\r\n* fix formatting\r\n\r\n* uppercase some test cases I missed\r\n\r\n* add EVALSHA to cluster slot tests\r\n\r\n* restore lower case hashes; erroneously thought Redis used upper case\r\n\r\n* add ScriptOperations to benchmark this change\r\n\r\n* formatting fixes\r\n\r\n---------\r\n\r\nCo-authored-by: Badrish Chandramouli <badrishc@microsoft.com>",
+          "timestamp": "2024-12-12T23:23:53-08:00",
+          "tree_id": "8c0664ade6b6572a8af295961a2d61a846b60756",
+          "url": "https://github.com/microsoft/garnet/commit/aa004d372a23731e3e5f0fa65d701c4a4d62b381"
+        },
+        "date": 1734075010063,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 146741.77053598256,
+            "unit": "ns",
+            "range": "± 618.0743879402081"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 134445.08349609375,
+            "unit": "ns",
+            "range": "± 271.48172024067435"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 129599.96943010602,
+            "unit": "ns",
+            "range": "± 1364.0615325836186"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: ACL)",
+            "value": 156585.3662283761,
+            "unit": "ns",
+            "range": "± 839.3469168523584"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 161458.125,
+            "unit": "ns",
+            "range": "± 873.9017938265946"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 151577.17471078725,
+            "unit": "ns",
+            "range": "± 342.8506840501759"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 142169.42276204427,
+            "unit": "ns",
+            "range": "± 1943.8547741960072"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: AOF)",
+            "value": 164776.23733723958,
+            "unit": "ns",
+            "range": "± 1645.816683555271"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 145753.1678936298,
+            "unit": "ns",
+            "range": "± 290.9458896801717"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 137653.94051106772,
+            "unit": "ns",
+            "range": "± 322.05133238710334"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 125382.53315429688,
+            "unit": "ns",
+            "range": "± 1171.3355604994906"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.HSetDel(Params: None)",
+            "value": 158078.58188476562,
+            "unit": "ns",
+            "range": "± 1952.107670038775"
           }
         ]
       }
