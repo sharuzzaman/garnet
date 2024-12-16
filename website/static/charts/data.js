@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734377279326,
+  "lastUpdate": 1734377312916,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -21684,6 +21684,84 @@ window.BENCHMARK_DATA = {
             "value": 98355.10602678571,
             "unit": "ns",
             "range": "± 395.3336358162344"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "babykart@gmail.com",
+            "name": "babykart",
+            "username": "babykart"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fad521ea6d85fa24ed8c209651b54d0b87b2434e",
+          "message": "[helm-chart] Add helm-docs to the helm chart workflow (#883)\n\n* Standardize the variables\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Add Helm chart artifacts build directory\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Add helm-docs to the helm chart workflow\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Create a PR to update charts/garnet/README.md\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>",
+          "timestamp": "2024-12-16T11:21:10-08:00",
+          "tree_id": "67ea2f25ee5b507cb48ef54f8edc68e2f900019c",
+          "url": "https://github.com/microsoft/garnet/commit/fad521ea6d85fa24ed8c209651b54d0b87b2434e"
+        },
+        "date": 1734377304103,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 114620.31062199519,
+            "unit": "ns",
+            "range": "± 1583.203921993921"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 101830.67708333333,
+            "unit": "ns",
+            "range": "± 253.97500389876797"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 97592.84580775669,
+            "unit": "ns",
+            "range": "± 221.90875628704876"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 129444.56411508414,
+            "unit": "ns",
+            "range": "± 428.02077053094916"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 120631.00341796875,
+            "unit": "ns",
+            "range": "± 898.0823255409052"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 117381.39078776042,
+            "unit": "ns",
+            "range": "± 448.9830915806046"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 117584.48311941964,
+            "unit": "ns",
+            "range": "± 111.7342870503071"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 103258.96362304688,
+            "unit": "ns",
+            "range": "± 316.9284272989154"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 95570.3857421875,
+            "unit": "ns",
+            "range": "± 191.44852851011865"
           }
         ]
       }
