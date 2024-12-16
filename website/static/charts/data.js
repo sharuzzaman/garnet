@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734392628019,
+  "lastUpdate": 1734392652051,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -11132,6 +11132,90 @@ window.BENCHMARK_DATA = {
             "value": 126798.00336162861,
             "unit": "ns",
             "range": "± 573.6263606950937"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1f9e51cf689fb94fec629b9081f772de4659966",
+          "message": "[Compatibility] Added ZINTER, ZINTERCARD, ZINTERSTORE command (#831)\n\n* Added ZINTER, ZINTERCARD, ZINTERSTORE command\r\n\r\n* Format fix\r\n\r\n* Test fix\r\n\r\n* Added comments and docs\r\n\r\n* Fix magic string\r\n\r\n* Review commands\r\n\r\n* Fixed review comments\r\n\r\n---------\r\n\r\nCo-authored-by: Tal Zaccai <talzacc@microsoft.com>",
+          "timestamp": "2024-12-16T15:39:13-08:00",
+          "tree_id": "3fdad4f3173b970d1a3410a66f90dcdfd4c6e497",
+          "url": "https://github.com/microsoft/garnet/commit/f1f9e51cf689fb94fec629b9081f772de4659966"
+        },
+        "date": 1734392650325,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 16872.70101216634,
+            "unit": "ns",
+            "range": "± 146.2341152529107"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 16452.92595214844,
+            "unit": "ns",
+            "range": "± 223.62476503505977"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14973.760173543295,
+            "unit": "ns",
+            "range": "± 74.00951169011351"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 14166.524924645057,
+            "unit": "ns",
+            "range": "± 34.720015411717185"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 119941.42650428184,
+            "unit": "ns",
+            "range": "± 343.99553098414293"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 20840.1876173753,
+            "unit": "ns",
+            "range": "± 90.6291240251401"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 21325.535894775392,
+            "unit": "ns",
+            "range": "± 128.8974175241454"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 15916.391396155725,
+            "unit": "ns",
+            "range": "± 25.901550651369107"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 15487.00511271159,
+            "unit": "ns",
+            "range": "± 171.1072178400078"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 130180.44980875652,
+            "unit": "ns",
+            "range": "± 162.40992576525693"
           }
         ]
       }
