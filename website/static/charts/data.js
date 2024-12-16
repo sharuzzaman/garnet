@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734377155486,
+  "lastUpdate": 1734377160558,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -12132,6 +12132,54 @@ window.BENCHMARK_DATA = {
             "value": 2281.8643136457963,
             "unit": "ns",
             "range": "± 78.46298311109284"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "babykart@gmail.com",
+            "name": "babykart",
+            "username": "babykart"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fad521ea6d85fa24ed8c209651b54d0b87b2434e",
+          "message": "[helm-chart] Add helm-docs to the helm chart workflow (#883)\n\n* Standardize the variables\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Add Helm chart artifacts build directory\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Add helm-docs to the helm chart workflow\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n* Create a PR to update charts/garnet/README.md\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>\r\n\r\n---------\r\n\r\nSigned-off-by: babykart <babykart@gmail.com>",
+          "timestamp": "2024-12-16T11:21:10-08:00",
+          "tree_id": "67ea2f25ee5b507cb48ef54f8edc68e2f900019c",
+          "url": "https://github.com/microsoft/garnet/commit/fad521ea6d85fa24ed8c209651b54d0b87b2434e"
+        },
+        "date": 1734377149917,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 119.29225554833046,
+            "unit": "ns",
+            "range": "± 0.3467290979114484"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 197.1500015258789,
+            "unit": "ns",
+            "range": "± 0.5589125122985179"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 341.7323772723858,
+            "unit": "ns",
+            "range": "± 5.589666904635364"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2227.791507427509,
+            "unit": "ns",
+            "range": "± 8.128177990362854"
           }
         ]
       }
