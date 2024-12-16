@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734392537331,
+  "lastUpdate": 1734392538663,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [
@@ -7396,6 +7396,54 @@ window.BENCHMARK_DATA = {
             "value": 32236.072186279296,
             "unit": "ns",
             "range": "± 307.2156856296761"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f1f9e51cf689fb94fec629b9081f772de4659966",
+          "message": "[Compatibility] Added ZINTER, ZINTERCARD, ZINTERSTORE command (#831)\n\n* Added ZINTER, ZINTERCARD, ZINTERSTORE command\r\n\r\n* Format fix\r\n\r\n* Test fix\r\n\r\n* Added comments and docs\r\n\r\n* Fix magic string\r\n\r\n* Review commands\r\n\r\n* Fixed review comments\r\n\r\n---------\r\n\r\nCo-authored-by: Tal Zaccai <talzacc@microsoft.com>",
+          "timestamp": "2024-12-16T15:39:13-08:00",
+          "tree_id": "3fdad4f3173b970d1a3410a66f90dcdfd4c6e497",
+          "url": "https://github.com/microsoft/garnet/commit/f1f9e51cf689fb94fec629b9081f772de4659966"
+        },
+        "date": 1734392536472,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36509.882807804985,
+            "unit": "ns",
+            "range": "± 135.36420571969046"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 38613.486321082484,
+            "unit": "ns",
+            "range": "± 30.748359824308235"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31816.730875651043,
+            "unit": "ns",
+            "range": "± 26.26498440492891"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 32021.311589558918,
+            "unit": "ns",
+            "range": "± 51.16937977104647"
           }
         ]
       }
