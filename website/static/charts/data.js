@@ -1,9 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734393634597,
+  "lastUpdate": 1734483456741,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
-    "Benchmark": [
-    ],
+    "Benchmark": [],
     "Operations.BasicOperations (ubuntu-latest  net8.0 Release)": [
       {
         "commit": {
@@ -1264,6 +1263,54 @@ window.BENCHMARK_DATA = {
             "value": 32021.311589558918,
             "unit": "ns",
             "range": "± 51.16937977104647"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d965f8ac2afed49be01eddca82a88923aa013f69",
+          "message": "[Compatibility] Added ZUNION, ZUNIONSTORE commands (#833)\n\n* Added ZUNION, ZUNIONSTORE commands\r\n\r\n* Format fix\r\n\r\n* Fixed test failure\r\n\r\n* Fixed review commands\r\n\r\n* Build fix\r\n\r\n* Review command fixes\r\n\r\n* Buid fix",
+          "timestamp": "2024-12-17T16:54:36-08:00",
+          "tree_id": "91931c51f9df7e0404c9bb09d7a7dac5f9c45487",
+          "url": "https://github.com/microsoft/garnet/commit/d965f8ac2afed49be01eddca82a88923aa013f69"
+        },
+        "date": 1734483454672,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 36752.01412963867,
+            "unit": "ns",
+            "range": "± 596.2828456472726"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 37831.67894199916,
+            "unit": "ns",
+            "range": "± 525.4810909032065"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31232.199645996094,
+            "unit": "ns",
+            "range": "± 577.3368447707275"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 30953.341561453683,
+            "unit": "ns",
+            "range": "± 268.2460895079047"
           }
         ]
       }
