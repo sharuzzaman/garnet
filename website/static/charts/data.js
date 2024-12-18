@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734548779856,
+  "lastUpdate": 1734548794178,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
@@ -500,6 +500,56 @@ window.BENCHMARK_DATA = {
             "value": 109171.39716045673,
             "unit": "ns",
             "range": "± 128.10058136840928"
+          }
+        ]
+      }
+    ],
+    "Cluster.ClusterMigrate (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "100c7d90caa8357d75a9f0c1e99fc21f14a31e39",
+          "message": "Fixed so all BDN are based on Bytes (had one using KB). Updated Operations.ObjectOperations expected values to be in bytes. Also, noticed Operations.CustomOperations was accidentally removed from BDN tests so put that back. (#887)",
+          "timestamp": "2024-12-18T11:00:06-08:00",
+          "tree_id": "e9c3d6924c8d99786f0419adfd3d73d9710abab7",
+          "url": "https://github.com/microsoft/garnet/commit/100c7d90caa8357d75a9f0c1e99fc21f14a31e39"
+        },
+        "date": 1734548782225,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 34473.12665666853,
+            "unit": "ns",
+            "range": "± 41.61107442336036"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 35776.898193359375,
+            "unit": "ns",
+            "range": "± 55.38825095451808"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 31655.297264685996,
+            "unit": "ns",
+            "range": "± 72.78823883470467"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 29573.548419658953,
+            "unit": "ns",
+            "range": "± 24.261220481906083"
           }
         ]
       }
