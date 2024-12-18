@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734552065469,
+  "lastUpdate": 1734552210901,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
@@ -2790,6 +2790,210 @@ window.BENCHMARK_DATA = {
             "value": 24907.234497070312,
             "unit": "ns",
             "range": "± 24.55844219542999"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kmontrose@microsoft.com",
+            "name": "kevin-montrose",
+            "username": "kevin-montrose"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b256901fd086f3823420c4b90c95b87b5a20b1a5",
+          "message": "Lua Scripting Allocation, Performance, and Correctness Improvements (#882)\n\n* NLua -> KeraLua; literally nothing compiles\r\n\r\n* blind idiot translation into KeraLua; nothing works\r\n\r\n* very basic functionality restored\r\n\r\n* more complicated functionality sketched out; far from ideal, will need to upstream some KeraLua additions; also horribly broken\r\n\r\n* handle errors during script run (compilation is still unguarded, as we can't really do much there)\r\n\r\n* faster (and easier to understand, frankly) way to set and clear KEYS and ARGV at start\r\n\r\n* a little more functional; moving OK/ERR checking into the loader script may not be viable... but was worth experimenting with\r\n\r\n* redis.call should not accept table arguments, only strings and numbers; fix some ZADD scripting tests; special err response stuff can't be done on the Lua side, remove it\r\n\r\n* scripting appears to be at parity with NLua implementation\r\n\r\n* fix error propogation; implement needed functions for direct script running; all tests passing again\r\n\r\n* start on removing allocations and fixing encodings\r\n\r\n* remove more allocs\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* remove more allocations\r\n\r\n* add a test for weird binary values, note this fails in main today\r\n\r\n* knock out some alloc todos; do some cleanup\r\n\r\n* remove some more allocations\r\n\r\n* response processesing is now allocation free\r\n\r\n* kill a hand full of additional allocations\r\n\r\n* DRY up some repeated checks; assert assumptions about Lua stack in DEBUG builds\r\n\r\n* adjust some names, these keep confusing me; preparing for writing response directly to network stream\r\n\r\n* first whack at getting script results directly into network stream; lots broken right now\r\n\r\n* first pass of tables directly into network stream\r\n\r\n* complex data types now written out directly\r\n\r\n* Runner (ie. mapping Resp <-> .NET) restored to functionality; bits of cleanup\r\n\r\n* knock out some todo; pulling Lua constants in CmdStrings like everything else; avoid copying regular used strings into Lua each time they're needed\r\n\r\n* Benchmark depends on missing sessions always causing nil responses, which is odd, but easy enough to restore\r\n\r\n* remove one bespoke array rental\r\n\r\n* Remvoe another bespoke array rental\r\n\r\n* Yet another bespoke array rental\r\n\r\n* Cleanup\r\n\r\n* more benchmarks for LuaRunner; test that parameter resets work\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* where we've already proven a type is a number or string, skip a pinvoke to double check the type\r\n\r\n* avoid checkstack calls by tracking stack capacity on our side\r\n\r\n* remove more allocs\r\n\r\n* remove more allocs\r\n\r\n* add a benchmark for script operations\r\n\r\n* script lookup is in the hot path, so optimize the key type we're using a bit\r\n\r\n* expand ScriptOperations benchmark to actually invoke some functions and do some logic\r\n\r\n* huge cleanup; move all the Lua interop into a dedicated class, normalize stack checking, normalize assertions\r\n\r\n* switch to LibraryImport since we're on .NET 8\r\n\r\n* do a big audit of Lua invokes and mark where GC transition can be suppressed - it's unclear if .NET is actually doing that today, but it's safe\r\n\r\n* add a benchmark that returns an array, as there's an outstanding TODO to look at removing some p/invokes\r\n\r\n* nope\r\n\r\n* add a test for metatable behavior matching Redis; switch to Raw operations where now allowed; more closely sync methods exposed in Lua to those provided by Redis\r\n\r\n* todone\r\n\r\n* formatting\r\n\r\n* address feedback; spelling nits",
+          "timestamp": "2024-12-18T14:48:38-05:00",
+          "tree_id": "b4d8ab288ddcb54f71d90c7c5a55790321a34d13",
+          "url": "https://github.com/microsoft/garnet/commit/b256901fd086f3823420c4b90c95b87b5a20b1a5"
+        },
+        "date": 1734552203027,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Set(Params: ACL)",
+            "value": 14042.43894304548,
+            "unit": "ns",
+            "range": "± 15.181488905356904"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetEx(Params: ACL)",
+            "value": 20027.016122000558,
+            "unit": "ns",
+            "range": "± 39.70493727627949"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetNx(Params: ACL)",
+            "value": 19437.294123722957,
+            "unit": "ns",
+            "range": "± 21.77572043372193"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetXx(Params: ACL)",
+            "value": 18994.640096028645,
+            "unit": "ns",
+            "range": "± 28.989198061484338"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetFound(Params: ACL)",
+            "value": 15370.62007359096,
+            "unit": "ns",
+            "range": "± 19.341619333263754"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetNotFound(Params: ACL)",
+            "value": 11394.549015590123,
+            "unit": "ns",
+            "range": "± 48.47697524116714"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Increment(Params: ACL)",
+            "value": 21016.16457425631,
+            "unit": "ns",
+            "range": "± 25.06163947977736"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Decrement(Params: ACL)",
+            "value": 20505.5712890625,
+            "unit": "ns",
+            "range": "± 20.992487816378983"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.IncrementBy(Params: ACL)",
+            "value": 24850.87432861328,
+            "unit": "ns",
+            "range": "± 124.9790994432765"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.DecrementBy(Params: ACL)",
+            "value": 25139.54336983817,
+            "unit": "ns",
+            "range": "± 44.9852150441403"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Set(Params: AOF)",
+            "value": 19338.257053920202,
+            "unit": "ns",
+            "range": "± 47.477435243084074"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetEx(Params: AOF)",
+            "value": 25458.97003173828,
+            "unit": "ns",
+            "range": "± 64.8627898751084"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetNx(Params: AOF)",
+            "value": 24278.00074986049,
+            "unit": "ns",
+            "range": "± 56.196800701066"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetXx(Params: AOF)",
+            "value": 25604.012349446613,
+            "unit": "ns",
+            "range": "± 71.34166263000127"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetFound(Params: AOF)",
+            "value": 15410.378011067709,
+            "unit": "ns",
+            "range": "± 49.212010505890525"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetNotFound(Params: AOF)",
+            "value": 10421.51620047433,
+            "unit": "ns",
+            "range": "± 17.658192554654907"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Increment(Params: AOF)",
+            "value": 25887.53836495536,
+            "unit": "ns",
+            "range": "± 28.923781626915616"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Decrement(Params: AOF)",
+            "value": 27109.219970703125,
+            "unit": "ns",
+            "range": "± 33.539148152290785"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.IncrementBy(Params: AOF)",
+            "value": 30988.532104492188,
+            "unit": "ns",
+            "range": "± 137.28345314143118"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.DecrementBy(Params: AOF)",
+            "value": 30907.350667317707,
+            "unit": "ns",
+            "range": "± 152.1714529532309"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Set(Params: None)",
+            "value": 13837.904663085938,
+            "unit": "ns",
+            "range": "± 16.897201348744375"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetEx(Params: None)",
+            "value": 19383.8725789388,
+            "unit": "ns",
+            "range": "± 30.789927307140786"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetNx(Params: None)",
+            "value": 18372.82536824544,
+            "unit": "ns",
+            "range": "± 20.024492975118832"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.SetXx(Params: None)",
+            "value": 18466.92352294922,
+            "unit": "ns",
+            "range": "± 27.854510378793258"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetFound(Params: None)",
+            "value": 15590.353698730469,
+            "unit": "ns",
+            "range": "± 23.481609039193653"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.GetNotFound(Params: None)",
+            "value": 10936.569431849888,
+            "unit": "ns",
+            "range": "± 12.24762566418728"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Increment(Params: None)",
+            "value": 20865.576825823104,
+            "unit": "ns",
+            "range": "± 26.108908825970836"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.Decrement(Params: None)",
+            "value": 21313.485499790735,
+            "unit": "ns",
+            "range": "± 18.57610361229678"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.IncrementBy(Params: None)",
+            "value": 25496.546020507812,
+            "unit": "ns",
+            "range": "± 127.55852931892335"
+          },
+          {
+            "name": "BDN.benchmark.Operations.RawStringOperations.DecrementBy(Params: None)",
+            "value": 25593.02019391741,
+            "unit": "ns",
+            "range": "± 59.15501854480092"
           }
         ]
       }
