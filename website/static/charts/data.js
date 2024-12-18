@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734548683649,
+  "lastUpdate": 1734548695137,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
@@ -222,6 +222,50 @@ window.BENCHMARK_DATA = {
             "value": 133539.30624186198,
             "unit": "ns",
             "range": "± 1738.388872336639"
+          }
+        ]
+      }
+    ],
+    "Operations.BasicOperations (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "100c7d90caa8357d75a9f0c1e99fc21f14a31e39",
+          "message": "Fixed so all BDN are based on Bytes (had one using KB). Updated Operations.ObjectOperations expected values to be in bytes. Also, noticed Operations.CustomOperations was accidentally removed from BDN tests so put that back. (#887)",
+          "timestamp": "2024-12-18T11:00:06-08:00",
+          "tree_id": "e9c3d6924c8d99786f0419adfd3d73d9710abab7",
+          "url": "https://github.com/microsoft/garnet/commit/100c7d90caa8357d75a9f0c1e99fc21f14a31e39"
+        },
+        "date": 1734548685407,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1829.11742074149,
+            "unit": "ns",
+            "range": "± 2.511234364508957"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1801.737535916842,
+            "unit": "ns",
+            "range": "± 7.279426926385609"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1894.997160775321,
+            "unit": "ns",
+            "range": "± 5.575226478188903"
           }
         ]
       }
