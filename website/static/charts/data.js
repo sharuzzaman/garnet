@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734483479581,
+  "lastUpdate": 1734483487157,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -2027,6 +2027,54 @@ window.BENCHMARK_DATA = {
             "value": 3003.538348061698,
             "unit": "ns",
             "range": "± 25.069325310616264"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d965f8ac2afed49be01eddca82a88923aa013f69",
+          "message": "[Compatibility] Added ZUNION, ZUNIONSTORE commands (#833)\n\n* Added ZUNION, ZUNIONSTORE commands\r\n\r\n* Format fix\r\n\r\n* Fixed test failure\r\n\r\n* Fixed review commands\r\n\r\n* Build fix\r\n\r\n* Review command fixes\r\n\r\n* Buid fix",
+          "timestamp": "2024-12-17T16:54:36-08:00",
+          "tree_id": "91931c51f9df7e0404c9bb09d7a7dac5f9c45487",
+          "url": "https://github.com/microsoft/garnet/commit/d965f8ac2afed49be01eddca82a88923aa013f69"
+        },
+        "date": 1734483484159,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 187.36731851100922,
+            "unit": "ns",
+            "range": "± 1.4726390175678732"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 296.1976917266846,
+            "unit": "ns",
+            "range": "± 2.4992526178854035"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 597.3464776357015,
+            "unit": "ns",
+            "range": "± 5.38884835573616"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2951.162675221761,
+            "unit": "ns",
+            "range": "± 19.3486378388116"
           }
         ]
       }
