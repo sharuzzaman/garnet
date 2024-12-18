@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734548830593,
+  "lastUpdate": 1734548868290,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
@@ -666,6 +666,86 @@ window.BENCHMARK_DATA = {
             "value": 57132.46539776142,
             "unit": "ns",
             "range": "± 178.63199882595632"
+          }
+        ]
+      }
+    ],
+    "Operations.ObjectOperations (windows-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "100c7d90caa8357d75a9f0c1e99fc21f14a31e39",
+          "message": "Fixed so all BDN are based on Bytes (had one using KB). Updated Operations.ObjectOperations expected values to be in bytes. Also, noticed Operations.CustomOperations was accidentally removed from BDN tests so put that back. (#887)",
+          "timestamp": "2024-12-18T11:00:06-08:00",
+          "tree_id": "e9c3d6924c8d99786f0419adfd3d73d9710abab7",
+          "url": "https://github.com/microsoft/garnet/commit/100c7d90caa8357d75a9f0c1e99fc21f14a31e39"
+        },
+        "date": 1734548851050,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 117519.54264322917,
+            "unit": "ns",
+            "range": "± 348.51825788937583"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 106267.5459798177,
+            "unit": "ns",
+            "range": "± 174.1081657752239"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 94922.080078125,
+            "unit": "ns",
+            "range": "± 93.18774730842905"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 133496.1417643229,
+            "unit": "ns",
+            "range": "± 523.610353935277"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 116392.06909179688,
+            "unit": "ns",
+            "range": "± 263.9376658112664"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 107712.40670340402,
+            "unit": "ns",
+            "range": "± 262.23428475468523"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 115240.95505934495,
+            "unit": "ns",
+            "range": "± 143.14109238197761"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 103728.14636230469,
+            "unit": "ns",
+            "range": "± 85.60638529231667"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 98547.67008463542,
+            "unit": "ns",
+            "range": "± 200.96577523733583"
           }
         ]
       }
