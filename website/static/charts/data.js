@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734483487157,
+  "lastUpdate": 1734483532582,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -4517,6 +4517,48 @@ window.BENCHMARK_DATA = {
             "value": 1892.7347056070964,
             "unit": "ns",
             "range": "± 2.5077026545494414"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d965f8ac2afed49be01eddca82a88923aa013f69",
+          "message": "[Compatibility] Added ZUNION, ZUNIONSTORE commands (#833)\n\n* Added ZUNION, ZUNIONSTORE commands\r\n\r\n* Format fix\r\n\r\n* Fixed test failure\r\n\r\n* Fixed review commands\r\n\r\n* Build fix\r\n\r\n* Review command fixes\r\n\r\n* Buid fix",
+          "timestamp": "2024-12-17T16:54:36-08:00",
+          "tree_id": "91931c51f9df7e0404c9bb09d7a7dac5f9c45487",
+          "url": "https://github.com/microsoft/garnet/commit/d965f8ac2afed49be01eddca82a88923aa013f69"
+        },
+        "date": 1734483525385,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1836.9046274820964,
+            "unit": "ns",
+            "range": "± 7.282993501960292"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1796.975275186392,
+            "unit": "ns",
+            "range": "± 1.7701578071754702"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1892.1420778547015,
+            "unit": "ns",
+            "range": "± 4.210300659972793"
           }
         ]
       }
