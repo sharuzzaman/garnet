@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734483707348,
+  "lastUpdate": 1734483717027,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -9193,6 +9193,84 @@ window.BENCHMARK_DATA = {
             "value": 99995.43718610491,
             "unit": "ns",
             "range": "± 212.49847304642287"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "pon.vijaynirmal@outlook.com",
+            "name": "Vijay Nirmal",
+            "username": "Vijay-Nirmal"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d965f8ac2afed49be01eddca82a88923aa013f69",
+          "message": "[Compatibility] Added ZUNION, ZUNIONSTORE commands (#833)\n\n* Added ZUNION, ZUNIONSTORE commands\r\n\r\n* Format fix\r\n\r\n* Fixed test failure\r\n\r\n* Fixed review commands\r\n\r\n* Build fix\r\n\r\n* Review command fixes\r\n\r\n* Buid fix",
+          "timestamp": "2024-12-17T16:54:36-08:00",
+          "tree_id": "91931c51f9df7e0404c9bb09d7a7dac5f9c45487",
+          "url": "https://github.com/microsoft/garnet/commit/d965f8ac2afed49be01eddca82a88923aa013f69"
+        },
+        "date": 1734483707888,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 120307.38431490384,
+            "unit": "ns",
+            "range": "± 324.2416449763312"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 105396.26934344952,
+            "unit": "ns",
+            "range": "± 140.14739475840702"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 94781.28763834636,
+            "unit": "ns",
+            "range": "± 116.01739542384513"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 131927.42745535713,
+            "unit": "ns",
+            "range": "± 477.5995651271612"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 116374.87182617188,
+            "unit": "ns",
+            "range": "± 286.3162479676962"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 110618.01382211539,
+            "unit": "ns",
+            "range": "± 168.67534805149813"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 115447.2383626302,
+            "unit": "ns",
+            "range": "± 205.27525832500004"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 104193.76307896206,
+            "unit": "ns",
+            "range": "± 185.20231659528034"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 95603.02821568081,
+            "unit": "ns",
+            "range": "± 274.77792827688484"
           }
         ]
       }
