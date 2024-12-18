@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734559472887,
+  "lastUpdate": 1734559598889,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -8899,6 +8899,88 @@ window.BENCHMARK_DATA = {
             "value": 141541.0441080729,
             "unit": "ns",
             "range": "± 970.0440979016588"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "kevin-montrose",
+            "username": "kevin-montrose",
+            "email": "kmontrose@microsoft.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "b256901fd086f3823420c4b90c95b87b5a20b1a5",
+          "message": "Lua Scripting Allocation, Performance, and Correctness Improvements (#882)\n\n* NLua -> KeraLua; literally nothing compiles\r\n\r\n* blind idiot translation into KeraLua; nothing works\r\n\r\n* very basic functionality restored\r\n\r\n* more complicated functionality sketched out; far from ideal, will need to upstream some KeraLua additions; also horribly broken\r\n\r\n* handle errors during script run (compilation is still unguarded, as we can't really do much there)\r\n\r\n* faster (and easier to understand, frankly) way to set and clear KEYS and ARGV at start\r\n\r\n* a little more functional; moving OK/ERR checking into the loader script may not be viable... but was worth experimenting with\r\n\r\n* redis.call should not accept table arguments, only strings and numbers; fix some ZADD scripting tests; special err response stuff can't be done on the Lua side, remove it\r\n\r\n* scripting appears to be at parity with NLua implementation\r\n\r\n* fix error propogation; implement needed functions for direct script running; all tests passing again\r\n\r\n* start on removing allocations and fixing encodings\r\n\r\n* remove more allocs\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* remove more allocations\r\n\r\n* add a test for weird binary values, note this fails in main today\r\n\r\n* knock out some alloc todos; do some cleanup\r\n\r\n* remove some more allocations\r\n\r\n* response processesing is now allocation free\r\n\r\n* kill a hand full of additional allocations\r\n\r\n* DRY up some repeated checks; assert assumptions about Lua stack in DEBUG builds\r\n\r\n* adjust some names, these keep confusing me; preparing for writing response directly to network stream\r\n\r\n* first whack at getting script results directly into network stream; lots broken right now\r\n\r\n* first pass of tables directly into network stream\r\n\r\n* complex data types now written out directly\r\n\r\n* Runner (ie. mapping Resp <-> .NET) restored to functionality; bits of cleanup\r\n\r\n* knock out some todo; pulling Lua constants in CmdStrings like everything else; avoid copying regular used strings into Lua each time they're needed\r\n\r\n* Benchmark depends on missing sessions always causing nil responses, which is odd, but easy enough to restore\r\n\r\n* remove one bespoke array rental\r\n\r\n* Remvoe another bespoke array rental\r\n\r\n* Yet another bespoke array rental\r\n\r\n* Cleanup\r\n\r\n* more benchmarks for LuaRunner; test that parameter resets work\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* where we've already proven a type is a number or string, skip a pinvoke to double check the type\r\n\r\n* avoid checkstack calls by tracking stack capacity on our side\r\n\r\n* remove more allocs\r\n\r\n* remove more allocs\r\n\r\n* add a benchmark for script operations\r\n\r\n* script lookup is in the hot path, so optimize the key type we're using a bit\r\n\r\n* expand ScriptOperations benchmark to actually invoke some functions and do some logic\r\n\r\n* huge cleanup; move all the Lua interop into a dedicated class, normalize stack checking, normalize assertions\r\n\r\n* switch to LibraryImport since we're on .NET 8\r\n\r\n* do a big audit of Lua invokes and mark where GC transition can be suppressed - it's unclear if .NET is actually doing that today, but it's safe\r\n\r\n* add a benchmark that returns an array, as there's an outstanding TODO to look at removing some p/invokes\r\n\r\n* nope\r\n\r\n* add a test for metatable behavior matching Redis; switch to Raw operations where now allowed; more closely sync methods exposed in Lua to those provided by Redis\r\n\r\n* todone\r\n\r\n* formatting\r\n\r\n* address feedback; spelling nits",
+          "timestamp": "2024-12-18T19:48:38Z",
+          "url": "https://github.com/microsoft/garnet/commit/b256901fd086f3823420c4b90c95b87b5a20b1a5"
+        },
+        "date": 1734559587935,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: DSV)",
+            "value": 15862.93705531529,
+            "unit": "ns",
+            "range": "± 25.09936376215082"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: DSV)",
+            "value": 14724.556262676533,
+            "unit": "ns",
+            "range": "± 20.26862859793476"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: DSV)",
+            "value": 14542.810645470252,
+            "unit": "ns",
+            "range": "± 17.852299779215155"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: DSV)",
+            "value": 13038.839545616736,
+            "unit": "ns",
+            "range": "± 17.831707760520732"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: DSV)",
+            "value": 129376.0965983073,
+            "unit": "ns",
+            "range": "± 143.68357026561827"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Get(Params: None)",
+            "value": 19354.00202824519,
+            "unit": "ns",
+            "range": "± 15.756277824641906"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.Set(Params: None)",
+            "value": 17938.326314290363,
+            "unit": "ns",
+            "range": "± 24.24117116941871"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MGet(Params: None)",
+            "value": 15257.09250313895,
+            "unit": "ns",
+            "range": "± 12.539179629323728"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.MSet(Params: None)",
+            "value": 14334.24547635592,
+            "unit": "ns",
+            "range": "± 8.694358177465773"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterOperations.CTXNSET(Params: None)",
+            "value": 140476.513671875,
+            "unit": "ns",
+            "range": "± 136.85083727185997"
           }
         ]
       }
