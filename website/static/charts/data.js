@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734542906810,
+  "lastUpdate": 1734542966910,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -15825,6 +15825,102 @@ window.BENCHMARK_DATA = {
             "value": 42000.152587890625,
             "unit": "ns",
             "range": "± 71.84541736973968"
+          }
+        ]
+      }
+    ],
+    "Operations.CustomOperations (ubuntu-latest  net8.0 Release)": [
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "e38ef6251a7661d85a2f44ef2cacae48ba4109e3",
+          "message": "Fixed so all BDN are based on Bytes (had one using KB). Updated Operations.ObjectOperations expected values to be in bytes. Also, noticed Operations.CustomOperations was accidentally removed from BDN tests so put that back.",
+          "timestamp": "2024-12-18T17:22:08Z",
+          "url": "https://github.com/microsoft/garnet/commit/e38ef6251a7661d85a2f44ef2cacae48ba4109e3"
+        },
+        "date": 1734542964366,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: ACL)",
+            "value": 61467.48780235877,
+            "unit": "ns",
+            "range": "± 113.20610174596948"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: ACL)",
+            "value": 233711.24735514322,
+            "unit": "ns",
+            "range": "± 792.870457391839"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: ACL)",
+            "value": 117628.67212320963,
+            "unit": "ns",
+            "range": "± 160.13066414983828"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: ACL)",
+            "value": 106933.99930826823,
+            "unit": "ns",
+            "range": "± 103.69543755478227"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: AOF)",
+            "value": 59959.66864013672,
+            "unit": "ns",
+            "range": "± 366.0217259672439"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: AOF)",
+            "value": 246182.64390345983,
+            "unit": "ns",
+            "range": "± 1297.9701543232768"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: AOF)",
+            "value": 133180.9957845052,
+            "unit": "ns",
+            "range": "± 1453.1406213692837"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: AOF)",
+            "value": 133901.82430326022,
+            "unit": "ns",
+            "range": "± 447.7520637398846"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: None)",
+            "value": 57568.12023111979,
+            "unit": "ns",
+            "range": "± 353.46872649261815"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: None)",
+            "value": 233023.1776123047,
+            "unit": "ns",
+            "range": "± 1395.4221778830902"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: None)",
+            "value": 117259.62330729167,
+            "unit": "ns",
+            "range": "± 613.4535242441883"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: None)",
+            "value": 109580.082421875,
+            "unit": "ns",
+            "range": "± 715.909426800333"
           }
         ]
       }
