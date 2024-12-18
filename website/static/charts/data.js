@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734542783013,
+  "lastUpdate": 1734542835020,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -4191,6 +4191,52 @@ window.BENCHMARK_DATA = {
             "value": 2202.071980067662,
             "unit": "ns",
             "range": "± 4.718900153740782"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "committer": {
+            "name": "darrenge",
+            "username": "darrenge",
+            "email": "darrenge@microsoft.com"
+          },
+          "id": "e38ef6251a7661d85a2f44ef2cacae48ba4109e3",
+          "message": "Fixed so all BDN are based on Bytes (had one using KB). Updated Operations.ObjectOperations expected values to be in bytes. Also, noticed Operations.CustomOperations was accidentally removed from BDN tests so put that back.",
+          "timestamp": "2024-12-18T17:22:08Z",
+          "url": "https://github.com/microsoft/garnet/commit/e38ef6251a7661d85a2f44ef2cacae48ba4109e3"
+        },
+        "date": 1734542825051,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 142.3640489578247,
+            "unit": "ns",
+            "range": "± 0.2691912546065668"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 202.08311997927152,
+            "unit": "ns",
+            "range": "± 2.2493675694237254"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 380.42355219523114,
+            "unit": "ns",
+            "range": "± 1.28853707749085"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 2237.4201910836355,
+            "unit": "ns",
+            "range": "± 3.46294523489166"
           }
         ]
       }
