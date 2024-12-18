@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734552031536,
+  "lastUpdate": 1734552065469,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Cluster.ClusterMigrate (ubuntu-latest  net8.0 Release)": [
@@ -2006,6 +2006,174 @@ window.BENCHMARK_DATA = {
             "value": 45283.268229166664,
             "unit": "ns",
             "range": "± 122.67474688602624"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "kmontrose@microsoft.com",
+            "name": "kevin-montrose",
+            "username": "kevin-montrose"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b256901fd086f3823420c4b90c95b87b5a20b1a5",
+          "message": "Lua Scripting Allocation, Performance, and Correctness Improvements (#882)\n\n* NLua -> KeraLua; literally nothing compiles\r\n\r\n* blind idiot translation into KeraLua; nothing works\r\n\r\n* very basic functionality restored\r\n\r\n* more complicated functionality sketched out; far from ideal, will need to upstream some KeraLua additions; also horribly broken\r\n\r\n* handle errors during script run (compilation is still unguarded, as we can't really do much there)\r\n\r\n* faster (and easier to understand, frankly) way to set and clear KEYS and ARGV at start\r\n\r\n* a little more functional; moving OK/ERR checking into the loader script may not be viable... but was worth experimenting with\r\n\r\n* redis.call should not accept table arguments, only strings and numbers; fix some ZADD scripting tests; special err response stuff can't be done on the Lua side, remove it\r\n\r\n* scripting appears to be at parity with NLua implementation\r\n\r\n* fix error propogation; implement needed functions for direct script running; all tests passing again\r\n\r\n* start on removing allocations and fixing encodings\r\n\r\n* remove more allocs\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* add a test (and fixes) confirming that redis.call errors match Redis behavior\r\n\r\n* remove more allocations\r\n\r\n* add a test for weird binary values, note this fails in main today\r\n\r\n* knock out some alloc todos; do some cleanup\r\n\r\n* remove some more allocations\r\n\r\n* response processesing is now allocation free\r\n\r\n* kill a hand full of additional allocations\r\n\r\n* DRY up some repeated checks; assert assumptions about Lua stack in DEBUG builds\r\n\r\n* adjust some names, these keep confusing me; preparing for writing response directly to network stream\r\n\r\n* first whack at getting script results directly into network stream; lots broken right now\r\n\r\n* first pass of tables directly into network stream\r\n\r\n* complex data types now written out directly\r\n\r\n* Runner (ie. mapping Resp <-> .NET) restored to functionality; bits of cleanup\r\n\r\n* knock out some todo; pulling Lua constants in CmdStrings like everything else; avoid copying regular used strings into Lua each time they're needed\r\n\r\n* Benchmark depends on missing sessions always causing nil responses, which is odd, but easy enough to restore\r\n\r\n* remove one bespoke array rental\r\n\r\n* Remvoe another bespoke array rental\r\n\r\n* Yet another bespoke array rental\r\n\r\n* Cleanup\r\n\r\n* more benchmarks for LuaRunner; test that parameter resets work\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* most overhead is in pinvoke, so start moving some stuff over\r\n\r\n* where we've already proven a type is a number or string, skip a pinvoke to double check the type\r\n\r\n* avoid checkstack calls by tracking stack capacity on our side\r\n\r\n* remove more allocs\r\n\r\n* remove more allocs\r\n\r\n* add a benchmark for script operations\r\n\r\n* script lookup is in the hot path, so optimize the key type we're using a bit\r\n\r\n* expand ScriptOperations benchmark to actually invoke some functions and do some logic\r\n\r\n* huge cleanup; move all the Lua interop into a dedicated class, normalize stack checking, normalize assertions\r\n\r\n* switch to LibraryImport since we're on .NET 8\r\n\r\n* do a big audit of Lua invokes and mark where GC transition can be suppressed - it's unclear if .NET is actually doing that today, but it's safe\r\n\r\n* add a benchmark that returns an array, as there's an outstanding TODO to look at removing some p/invokes\r\n\r\n* nope\r\n\r\n* add a test for metatable behavior matching Redis; switch to Raw operations where now allowed; more closely sync methods exposed in Lua to those provided by Redis\r\n\r\n* todone\r\n\r\n* formatting\r\n\r\n* address feedback; spelling nits",
+          "timestamp": "2024-12-18T14:48:38-05:00",
+          "tree_id": "b4d8ab288ddcb54f71d90c7c5a55790321a34d13",
+          "url": "https://github.com/microsoft/garnet/commit/b256901fd086f3823420c4b90c95b87b5a20b1a5"
+        },
+        "date": 1734552055835,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptLoad(Params: ACL)",
+            "value": 15350.70790608724,
+            "unit": "ns",
+            "range": "± 22.421138221872692"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsTrue(Params: ACL)",
+            "value": 17683.727440467246,
+            "unit": "ns",
+            "range": "± 14.902023925314461"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsFalse(Params: ACL)",
+            "value": 18088.216458834133,
+            "unit": "ns",
+            "range": "± 17.496073058807607"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.Eval(Params: ACL)",
+            "value": 8089.64603130634,
+            "unit": "ns",
+            "range": "± 50.583797174133714"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.EvalSha(Params: ACL)",
+            "value": 9418.326568603516,
+            "unit": "ns",
+            "range": "± 11.154324031691855"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.SmallScript(Params: ACL)",
+            "value": 10038.380759102958,
+            "unit": "ns",
+            "range": "± 20.30219415339614"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.LargeScript(Params: ACL)",
+            "value": 11468.083543043871,
+            "unit": "ns",
+            "range": "± 20.79759054451328"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ArrayReturn(Params: ACL)",
+            "value": 8008.365413120815,
+            "unit": "ns",
+            "range": "± 7.846008179495756"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptLoad(Params: AOF)",
+            "value": 90022.37386067708,
+            "unit": "ns",
+            "range": "± 320.32066138322904"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsTrue(Params: AOF)",
+            "value": 23567.902483258928,
+            "unit": "ns",
+            "range": "± 22.93559646967698"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsFalse(Params: AOF)",
+            "value": 22714.68787560096,
+            "unit": "ns",
+            "range": "± 13.983815509950594"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.Eval(Params: AOF)",
+            "value": 70286.50948660714,
+            "unit": "ns",
+            "range": "± 115.34511133027694"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.EvalSha(Params: AOF)",
+            "value": 28574.50408935547,
+            "unit": "ns",
+            "range": "± 42.29613969379347"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.SmallScript(Params: AOF)",
+            "value": 65071.63461538462,
+            "unit": "ns",
+            "range": "± 77.90398638150214"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.LargeScript(Params: AOF)",
+            "value": 4430074.386160715,
+            "unit": "ns",
+            "range": "± 19553.756914673868"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ArrayReturn(Params: AOF)",
+            "value": 127365.16636439732,
+            "unit": "ns",
+            "range": "± 120.7286361156035"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptLoad(Params: None)",
+            "value": 91343.8545735677,
+            "unit": "ns",
+            "range": "± 422.29073000967185"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsTrue(Params: None)",
+            "value": 23517.776841383715,
+            "unit": "ns",
+            "range": "± 19.562435784969473"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ScriptExistsFalse(Params: None)",
+            "value": 22772.498145470254,
+            "unit": "ns",
+            "range": "± 17.91404677985141"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.Eval(Params: None)",
+            "value": 71698.83829752605,
+            "unit": "ns",
+            "range": "± 240.4984997879894"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.EvalSha(Params: None)",
+            "value": 30094.42690335787,
+            "unit": "ns",
+            "range": "± 36.29647392923562"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.SmallScript(Params: None)",
+            "value": 62459.580641526445,
+            "unit": "ns",
+            "range": "± 150.8570533939727"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.LargeScript(Params: None)",
+            "value": 4409682.589285715,
+            "unit": "ns",
+            "range": "± 10837.017380698617"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ScriptOperations.ArrayReturn(Params: None)",
+            "value": 129704.10725911458,
+            "unit": "ns",
+            "range": "± 202.2278546837363"
           }
         ]
       }
