@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734578849196,
+  "lastUpdate": 1734578881335,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -18191,6 +18191,102 @@ window.BENCHMARK_DATA = {
             "value": 108678.47028459821,
             "unit": "ns",
             "range": "± 90.29682009963271"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f856686d638c00ff8120abb97d464e91bb9cf3b",
+          "message": "Update ci-bdnbenchmark.yml (#890)",
+          "timestamp": "2024-12-18T19:19:57-08:00",
+          "tree_id": "44e9ec43a906a420fc56978d04e38514cc557d22",
+          "url": "https://github.com/microsoft/garnet/commit/1f856686d638c00ff8120abb97d464e91bb9cf3b"
+        },
+        "date": 1734578868782,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: ACL)",
+            "value": 59430.72063739483,
+            "unit": "ns",
+            "range": "± 59.505877857308164"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: ACL)",
+            "value": 218576.36195591517,
+            "unit": "ns",
+            "range": "± 381.9550677757842"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: ACL)",
+            "value": 130789.697265625,
+            "unit": "ns",
+            "range": "± 185.07234745624143"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: ACL)",
+            "value": 108309.1081891741,
+            "unit": "ns",
+            "range": "± 127.60371440879454"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: AOF)",
+            "value": 61651.21553861178,
+            "unit": "ns",
+            "range": "± 117.92035209640869"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: AOF)",
+            "value": 229062.66392299108,
+            "unit": "ns",
+            "range": "± 842.0615096641033"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: AOF)",
+            "value": 138210.29750279017,
+            "unit": "ns",
+            "range": "± 327.3415116227562"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: AOF)",
+            "value": 131548.0183919271,
+            "unit": "ns",
+            "range": "± 311.46137439891373"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomRawStringCommand(Params: None)",
+            "value": 61720.19566127232,
+            "unit": "ns",
+            "range": "± 61.53593385251946"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomObjectCommand(Params: None)",
+            "value": 221862.64485677084,
+            "unit": "ns",
+            "range": "± 387.7611969190268"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomTransaction(Params: None)",
+            "value": 131243.85463169642,
+            "unit": "ns",
+            "range": "± 128.71205111020276"
+          },
+          {
+            "name": "BDN.benchmark.Operations.CustomOperations.CustomProcedure(Params: None)",
+            "value": 109758.46886268028,
+            "unit": "ns",
+            "range": "± 272.91620627668874"
           }
         ]
       }
