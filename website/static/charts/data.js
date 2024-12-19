@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734643240277,
+  "lastUpdate": 1734643321062,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -8147,6 +8147,84 @@ window.BENCHMARK_DATA = {
             "value": 133660.54634602866,
             "unit": "ns",
             "range": "± 1570.7038399074222"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93fd0bf67152f25dfdc98f2ceb344a8c9cd6f91a",
+          "message": "Updated Lua values and added expected values for the new ScriptOperations (#891)\n\n* Updated Lua values and added expected values for the new ScriptOperations\r\n\r\n* Had wrong values for LargeScript None and LargeScript AOF.",
+          "timestamp": "2024-12-19T13:17:16-08:00",
+          "tree_id": "6ba962fbec0723620fa57f0a986b13412c10c70f",
+          "url": "https://github.com/microsoft/garnet/commit/93fd0bf67152f25dfdc98f2ceb344a8c9cd6f91a"
+        },
+        "date": 1734643318399,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: ACL)",
+            "value": 149371.40583496093,
+            "unit": "ns",
+            "range": "± 1342.1731628303135"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: ACL)",
+            "value": 134528.04294057994,
+            "unit": "ns",
+            "range": "± 321.25109033811674"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: ACL)",
+            "value": 127014.37173665364,
+            "unit": "ns",
+            "range": "± 1365.5385625009142"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: AOF)",
+            "value": 162667.0348795573,
+            "unit": "ns",
+            "range": "± 408.4313219658065"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: AOF)",
+            "value": 152548.70340983072,
+            "unit": "ns",
+            "range": "± 1019.9556836701696"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: AOF)",
+            "value": 145342.77481515068,
+            "unit": "ns",
+            "range": "± 568.9699594297269"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.ZAddRem(Params: None)",
+            "value": 143818.0591430664,
+            "unit": "ns",
+            "range": "± 208.90700897903557"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.LPushPop(Params: None)",
+            "value": 144190.07194010416,
+            "unit": "ns",
+            "range": "± 459.91382610666903"
+          },
+          {
+            "name": "BDN.benchmark.Operations.ObjectOperations.SAddRem(Params: None)",
+            "value": 130161.25346491887,
+            "unit": "ns",
+            "range": "± 920.0196120072112"
           }
         ]
       }
