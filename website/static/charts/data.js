@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734578589786,
+  "lastUpdate": 1734578590926,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -2297,6 +2297,54 @@ window.BENCHMARK_DATA = {
             "value": 648.9806544621786,
             "unit": "ns",
             "range": "± 3.135704460686868"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f856686d638c00ff8120abb97d464e91bb9cf3b",
+          "message": "Update ci-bdnbenchmark.yml (#890)",
+          "timestamp": "2024-12-18T19:19:57-08:00",
+          "tree_id": "44e9ec43a906a420fc56978d04e38514cc557d22",
+          "url": "https://github.com/microsoft/garnet/commit/1f856686d638c00ff8120abb97d464e91bb9cf3b"
+        },
+        "date": 1734578587956,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 269.9233253002167,
+            "unit": "ns",
+            "range": "± 0.6827061904669384"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 475.2320156733195,
+            "unit": "ns",
+            "range": "± 2.684835184150708"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 714.6956875483195,
+            "unit": "ns",
+            "range": "± 2.404220189815872"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 637.0834420277522,
+            "unit": "ns",
+            "range": "± 0.6108542034337306"
           }
         ]
       }
