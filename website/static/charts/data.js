@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734578577292,
+  "lastUpdate": 1734578589786,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -671,6 +671,48 @@ window.BENCHMARK_DATA = {
             "value": 1733.6746339797974,
             "unit": "ns",
             "range": "± 4.648719082460223"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "1f856686d638c00ff8120abb97d464e91bb9cf3b",
+          "message": "Update ci-bdnbenchmark.yml (#890)",
+          "timestamp": "2024-12-18T19:19:57-08:00",
+          "tree_id": "44e9ec43a906a420fc56978d04e38514cc557d22",
+          "url": "https://github.com/microsoft/garnet/commit/1f856686d638c00ff8120abb97d464e91bb9cf3b"
+        },
+        "date": 1734578587556,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1837.5572067260741,
+            "unit": "ns",
+            "range": "± 11.760311024671243"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1712.4765569051108,
+            "unit": "ns",
+            "range": "± 13.105350625278039"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1741.374750773112,
+            "unit": "ns",
+            "range": "± 12.626547336572353"
           }
         ]
       }
