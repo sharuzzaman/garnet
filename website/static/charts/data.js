@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734643238923,
+  "lastUpdate": 1734643240277,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -755,6 +755,48 @@ window.BENCHMARK_DATA = {
             "value": 1672.4429003397624,
             "unit": "ns",
             "range": "± 0.8368073669406033"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "darrenge@microsoft.com",
+            "name": "darrenge",
+            "username": "darrenge"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "93fd0bf67152f25dfdc98f2ceb344a8c9cd6f91a",
+          "message": "Updated Lua values and added expected values for the new ScriptOperations (#891)\n\n* Updated Lua values and added expected values for the new ScriptOperations\r\n\r\n* Had wrong values for LargeScript None and LargeScript AOF.",
+          "timestamp": "2024-12-19T13:17:16-08:00",
+          "tree_id": "6ba962fbec0723620fa57f0a986b13412c10c70f",
+          "url": "https://github.com/microsoft/garnet/commit/93fd0bf67152f25dfdc98f2ceb344a8c9cd6f91a"
+        },
+        "date": 1734643237135,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: ACL)",
+            "value": 1745.6971743265788,
+            "unit": "ns",
+            "range": "± 12.49307504658083"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: AOF)",
+            "value": 1769.6846618652344,
+            "unit": "ns",
+            "range": "± 9.501942986565917"
+          },
+          {
+            "name": "BDN.benchmark.Operations.BasicOperations.InlinePing(Params: None)",
+            "value": 1708.5121154149374,
+            "unit": "ns",
+            "range": "± 11.886566074750796"
           }
         ]
       }
