@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734595803379,
+  "lastUpdate": 1734595805607,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -2435,6 +2435,54 @@ window.BENCHMARK_DATA = {
             "value": 637.0834420277522,
             "unit": "ns",
             "range": "± 0.6108542034337306"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "820ca0fbae009817c2946a8205465b6f1de08b52",
+          "message": "Add BDN that includes embedded network stack (#889)\n\n* Initial checkin on BDN that includes network path - handles non-TLS only\r\n\r\n* cleanup\r\n\r\n* ensure dispose\r\n\r\n* cleanup\r\n\r\n* merge from main\r\n\r\n* Update ci-bdnbenchmark.yml",
+          "timestamp": "2024-12-19T00:06:41-08:00",
+          "tree_id": "45f6c39d28c32318b8c2f04a6a6b923a5ba207e9",
+          "url": "https://github.com/microsoft/garnet/commit/820ca0fbae009817c2946a8205465b6f1de08b52"
+        },
+        "date": 1734595801274,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 270.5529970486959,
+            "unit": "ns",
+            "range": "± 1.129702547097591"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 486.18578111208404,
+            "unit": "ns",
+            "range": "± 1.5722628828011782"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 645.3851815632412,
+            "unit": "ns",
+            "range": "± 3.2098321512948407"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 647.7655875523885,
+            "unit": "ns",
+            "range": "± 1.5788204947589475"
           }
         ]
       }
