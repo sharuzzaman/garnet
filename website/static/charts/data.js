@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734747072221,
+  "lastUpdate": 1734747074594,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -7823,6 +7823,54 @@ window.BENCHMARK_DATA = {
             "value": 30230.61043875558,
             "unit": "ns",
             "range": "± 24.70081974753666"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "47ac84f2844530611520648b4d43277e0a2e0fb3",
+          "message": "BDN: use request struct to cleanup logic (#895)\n\n* Use struct to simplify BDN logic\r\n\r\n* update threshold\r\n\r\n* cleanup\r\n\r\n* nit",
+          "timestamp": "2024-12-20T18:06:09-08:00",
+          "tree_id": "9604c5438a0ed95b9e53d476eb01652c0e3bfb98",
+          "url": "https://github.com/microsoft/garnet/commit/47ac84f2844530611520648b4d43277e0a2e0fb3"
+        },
+        "date": 1734747051524,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Get(Params: None)",
+            "value": 34782.75800432478,
+            "unit": "ns",
+            "range": "± 76.37723640341733"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.Set(Params: None)",
+            "value": 37183.35178920201,
+            "unit": "ns",
+            "range": "± 57.16298641691147"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MGet(Params: None)",
+            "value": 30999.64773995536,
+            "unit": "ns",
+            "range": "± 25.399307163627384"
+          },
+          {
+            "name": "BDN.benchmark.Cluster.ClusterMigrate.MSet(Params: None)",
+            "value": 31006.55517578125,
+            "unit": "ns",
+            "range": "± 57.55856761039118"
           }
         ]
       }
