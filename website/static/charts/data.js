@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1734906564777,
+  "lastUpdate": 1734906601545,
   "repoUrl": "https://github.com/microsoft/garnet",
   "entries": {
     "Benchmark": [],
@@ -3035,6 +3035,54 @@ window.BENCHMARK_DATA = {
             "value": 643.6655611310687,
             "unit": "ns",
             "range": "± 2.098928053729155"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "badrishc@microsoft.com",
+            "name": "Badrish Chandramouli",
+            "username": "badrishc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d445d1ea26588bc3aa81f8845a32d0bff8142aa2",
+          "message": "We use a batch size of 1 for network BDNs in order to stress the network layer. (#896)",
+          "timestamp": "2024-12-22T14:26:53-08:00",
+          "tree_id": "0fb24f856ac6e48d298093b5db6b734bcafa22c8",
+          "url": "https://github.com/microsoft/garnet/commit/d445d1ea26588bc3aa81f8845a32d0bff8142aa2"
+        },
+        "date": 1734906598364,
+        "tool": "benchmarkdotnet",
+        "benches": [
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script1(Params: None)",
+            "value": 260.2515328847445,
+            "unit": "ns",
+            "range": "± 0.36157883023270954"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script2(Params: None)",
+            "value": 489.317353112357,
+            "unit": "ns",
+            "range": "± 0.9334724807962262"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script3(Params: None)",
+            "value": 672.9916081110637,
+            "unit": "ns",
+            "range": "± 2.317009208498218"
+          },
+          {
+            "name": "BDN.benchmark.Lua.LuaScripts.Script4(Params: None)",
+            "value": 642.3749979654948,
+            "unit": "ns",
+            "range": "± 1.7747241653529557"
           }
         ]
       }
